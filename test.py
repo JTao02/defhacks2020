@@ -15,7 +15,7 @@ HEADERS = {'Authorization': 'bearer %s' % API_KEY}
 # define the parameters
 PARAMETERS = {'limit': 50,
               'offset': 50,
-              'radius': 40000,
+              'radius': 22000,
               'location': 'Ottawa'}
 
 # FULL LIST
@@ -59,6 +59,15 @@ coffee_places=["coffee","breakfast_brunch"]
 folium.Marker([start_latitude, start_longitude],
                 tooltip="You are here",
                 icon=folium.Icon(color='red', icon='info-sign')).add_to(m)
+
+folium.CircleMarker(
+    location=[start_latitude, start_longitude],
+    radius=220,
+    popup="Radius of 22000m",
+    color='#428bca',
+    fill=True,
+    fill_color='#428bca'
+).add_to(m)
 
 
 for i, e in enumerate(latitude_list):

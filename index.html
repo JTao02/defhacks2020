@@ -3,10 +3,37 @@
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="style.css">
-        <title>Test</title>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+        <title>LineTracker</title>
     </head>
     <body>
-        Google maps API
-        <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/view?zoom=2&center=54.5260%2C-105.2551&key=AIzaSyCNuwxB6e8t6ITM_qsueuV-ZxdX65Y0Xps" allowfullscreen></iframe>
+        <div id="header-container">
+            <h1 class="header">LineTracker</h1>
+        </div>
+        <div id="filter-container">
+            <h3 class="sub-header">Filters</h3>
+            <form action="test.php" method="POST" enctype="multipart/form-data">
+                <div class="wrap" id="keyword-wrap">
+                    <label class="prompt" id="search-prompt">Search:</label>
+                    <input type="text" class="inside" id="search-input">
+                </div>
+
+                <div class="wrap" id="radius-wrap">
+                    <label class="prompt">Radius:<span class="inside"id="radius-input"></span></label>
+                    <input type="range" min="1000" max="40000" value="10000" step="1000" class="slider" id="myRange">
+                </div>
+
+                <div class="wrap" id="location-wrap">
+                    <label class="prompt">Location:<span class="inside"id="demo"></span></label>
+                    <input type="text" class="inside" id="location-input">
+                </div>
+                <input type="submit" value="Confirm" class="inside">
+            </form>
+        </div>
+        <div id="display-container">
+            <h3 class="sub-header">Search Results</h3>
+        </div>
+        <iframe src="./map.html"></iframe>
+        <script src="functions.js"></script>
     </body>
 </html>

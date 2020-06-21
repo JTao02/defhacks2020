@@ -58,7 +58,7 @@ coffee_places=["coffee","breakfast_brunch"]
 
 folium.Marker([start_latitude, start_longitude],
                 tooltip="You are here",
-                icon=folium.Icon(color='red', icon='leaf')).add_to(m)
+                icon=folium.Icon(color='red', icon='info-sign')).add_to(m)
 
 
 for i, e in enumerate(latitude_list):

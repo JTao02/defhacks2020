@@ -1,10 +1,10 @@
 import requests
 import json
 from functions import get_file_contents
+from database_funcs import *
 
 class Data:
     #Dictionary mapping location to current lines
-    lines = {}
     BUSINESS_ID = 'c6QaDLAu9T3ge_DZ7w4Sig'
     API_KEY = get_file_contents('api_key.txt')
 
@@ -15,12 +15,13 @@ class Data:
     @staticmethod
     #Getter method for lines
     def getLines(address):
-        return Data.lines[address]
+        return getQueueETA(address)
 
     @staticmethod
     #Setting method for lines
     def setLines(address, queue, eta):
-        Data.lines[address] = [queue, eta]
+        entry = {address : [queue, eta]}
+        updateDatabase(entry)
 
     @staticmethod
     #Allows user to filter their search.

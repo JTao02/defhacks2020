@@ -63,6 +63,13 @@ def get_location(business_data):
         results.append(biz['location'])
     return results 
 
+def get_addresses(business_data):
+    results=[]
+    for biz in business_data['businesses']:
+        current = biz['location'] #current is dictionary
+        results.append(current['address1'])
+    return results
+
 
 
 

@@ -1,6 +1,6 @@
 import requests
 import folium
-from get_api_key import get_file_contents
+from functions import get_file_contents
 from decipher_api import *
 # Business Search - https://api.yelp.com/v3/businesses/search
 #
@@ -17,7 +17,7 @@ PARAMETERS = {'term': 'Starbucks',
               'limit': 50,
               'offset': 50,
               'radius': 40000,
-              'location': 'Ottawa'}
+              'location': 'Toronto'}
 
 # FULL LIST
 '''
@@ -40,9 +40,13 @@ response = requests.get(url = ENDPOINT, params = PARAMETERS, headers = HEADERS)
 
 business_data = response.json()
 
+start_latitude = get_region_latitude(business_data)
+start_longitude = get_region_longitude(business_data)
+
 # create map object
-m = folium.Map(location=[45.421532, -75.697189], zoom_start=12)
+m = folium.Map(location=[start_latitude, start_longitude], zoom_start=12)
 tooltip = 'Click for more info'
+
 
 latitude_list = get_latitude_list(business_data)
 longitude_list = get_longitude_list(business_data)
@@ -57,7 +61,4 @@ for i, e in enumerate(latitude_list):
 # generate map
 m.save('map.html')
 
-<<<<<<< Updated upstream
-=======
 
->>>>>>> Stashed changes

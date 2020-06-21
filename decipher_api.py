@@ -84,7 +84,11 @@ def get_longitude_list(business_data):
         results.append(current['longitude'])
     return results
 
+def get_region_latitude(business_data):
+    return business_data['region']['center']['latitude']
 
+def get_region_longitude(business_data):
+    return business_data['region']['center']['longitude']
 
 
 

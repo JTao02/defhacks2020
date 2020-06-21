@@ -1,4 +1,5 @@
 import requests
+import folium
 from get_api_key import get_file_contents
 from decipher_api import *
 # Business Search - https://api.yelp.com/v3/businesses/search
@@ -39,4 +40,20 @@ response = requests.get(url = ENDPOINT, params = PARAMETERS, headers = HEADERS)
 
 business_data = response.json()
 
-print(get_addresses(business_data))
+# create map object
+m = folium.Map(location=[45.421532, -75.697189], zoom_start=12)
+tooltip = 'Click for more info'
+
+latitude_list = get_latitude_list(business_data)
+longitude_list = get_longitude_list(business_data)
+address_list = get_addresses(business_data)
+
+for i, e in enumerate(latitude_list):
+    folium.Marker([latitude_list[i],longitude_list[i]],
+                popup=address_list[i],
+                tooltip=tooltip,
+                icon=folium.Icon(color='green', icon='leaf')).add_to(m)
+
+# generate map
+m.save('map.html')
+

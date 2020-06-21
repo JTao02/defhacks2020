@@ -70,6 +70,21 @@ def get_addresses(business_data):
         results.append(current['address1'])
     return results
 
+def get_latitude_list(business_data):
+    results=[]
+    for biz in business_data['businesses']:
+        current = biz['coordinates'] #current is dictionary
+        results.append(current['latitude'])
+    return results
+
+def get_longitude_list(business_data):
+    results=[]
+    for biz in business_data['businesses']:
+        current = biz['coordinates'] #current is dictionary
+        results.append(current['longitude'])
+    return results
+
+
 
 
 

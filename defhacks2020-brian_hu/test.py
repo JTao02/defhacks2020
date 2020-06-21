@@ -57,7 +57,3 @@ for i, e in enumerate(latitude_list):
 # generate map
 m.save('map.html')
 
-<<<<<<< Updated upstream
-=======
-
->>>>>>> Stashed changes

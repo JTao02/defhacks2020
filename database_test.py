@@ -1,9 +1,8 @@
-import Credentials
 from pymongo import MongoClient
 
-client = MongoClient(f"mongodb+srv://Admin:{Credentials.password}@defhacks2020.snfxf.mongodb.net/DefHacks2020?retryWrites=true&w=majority")
-db = client["User_data"]
-collection = db["User stuff"]
+client = MongoClient("mongodb+srv://test_user:test123@defhacks2020.snfxf.mongodb.net/<dbname>?retryWrites=true&w=majority")
+db = client["Data"]
+collection = db["User_stuff"]
 
 entry = {"name": "Stephen", "Location": "Ottawa"}
 

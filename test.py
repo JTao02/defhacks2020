@@ -1,6 +1,6 @@
 import requests
 from get_api_key import get_file_contents
-
+from decipher_api import *
 # Business Search - https://api.yelp.com/v3/businesses/search
 #
 
@@ -39,5 +39,5 @@ response = requests.get(url = ENDPOINT, params = PARAMETERS, headers = HEADERS)
 
 business_data = response.json()
 
-for biz in business_data['businesses']:
-    print(biz['name'])
+print(get_location(business_data))
+

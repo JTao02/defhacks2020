@@ -23,7 +23,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_9755371c296d42a1919b59fcde915fbd {
+                #map_a3498b587ad04aa5903535b3ebeaac7c {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -35,15 +35,15 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_9755371c296d42a1919b59fcde915fbd" ></div>
+            <div class="folium-map" id="map_a3498b587ad04aa5903535b3ebeaac7c" ></div>
         
 </body>
 <script>    
     
-            var map_9755371c296d42a1919b59fcde915fbd = L.map(
-                "map_9755371c296d42a1919b59fcde915fbd",
+            var map_a3498b587ad04aa5903535b3ebeaac7c = L.map(
+                "map_a3498b587ad04aa5903535b3ebeaac7c",
                 {
-                    center: [43.67428196976998, -79.39682006835938],
+                    center: [45.3944075643109, -75.7012939453125],
                     crs: L.CRS.EPSG3857,
                     zoom: 12,
                     zoomControl: true,
@@ -55,38 +55,58 @@
 
         
     
-            var tile_layer_ac4858cd273f42f08bede69784700961 = L.tileLayer(
+            var tile_layer_6d7237ba1ffa49f0a254d1bcf0f7e4c6 = L.tileLayer(
                 "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_9755371c296d42a1919b59fcde915fbd);
+            ).addTo(map_a3498b587ad04aa5903535b3ebeaac7c);
         
     
-            var marker_123e786b1af743ed9e7b5eabed9adcb7 = L.marker(
-                [43.65082, -79.3878],
+            var marker_b488b4c0965443e5b165ead21c6bb62e = L.marker(
+                [45.3944075643109, -75.7012939453125],
                 {}
-            ).addTo(map_9755371c296d42a1919b59fcde915fbd);
+            ).addTo(map_a3498b587ad04aa5903535b3ebeaac7c);
         
     
-            var icon_741e03d22beb47c688521e03d68c0745 = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            var icon_3ddfed23dde940f2a4d17dfccf241d05 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
             );
-            marker_123e786b1af743ed9e7b5eabed9adcb7.setIcon(icon_741e03d22beb47c688521e03d68c0745);
+            marker_b488b4c0965443e5b165ead21c6bb62e.setIcon(icon_3ddfed23dde940f2a4d17dfccf241d05);
         
     
-        var popup_b08968722e6c44679d93cf6e7f43f48a = L.popup({"maxWidth": "100%"});
+            marker_b488b4c0965443e5b165ead21c6bb62e.bindTooltip(
+                `<div>
+                     You are here
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dcbacbda7fe740e7a1349077b629b1d3 = L.marker(
+                [45.4177480495287, -75.6982483001879],
+                {}
+            ).addTo(map_a3498b587ad04aa5903535b3ebeaac7c);
+        
+    
+            var icon_ef8022346a6447f1a985dbcf82431bd8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_dcbacbda7fe740e7a1349077b629b1d3.setIcon(icon_ef8022346a6447f1a985dbcf82431bd8);
+        
+    
+        var popup_31d14430abc942948d7b01d329c72734 = L.popup({"maxWidth": "100%"});
 
         
-            var html_a3a74959f2024368bf1a4562d2a38bd2 = $(`<div id="html_a3a74959f2024368bf1a4562d2a38bd2" style="width: 100.0%; height: 100.0%;">180 Queen Street  W</div>`)[0];
-            popup_b08968722e6c44679d93cf6e7f43f48a.setContent(html_a3a74959f2024368bf1a4562d2a38bd2);
+            var html_a0372217514f4d65abfa19aee100ec12 = $(`<div id="html_a0372217514f4d65abfa19aee100ec12" style="width: 100.0%; height: 100.0%;">197 Bank Street</div>`)[0];
+            popup_31d14430abc942948d7b01d329c72734.setContent(html_a0372217514f4d65abfa19aee100ec12);
         
 
-        marker_123e786b1af743ed9e7b5eabed9adcb7.bindPopup(popup_b08968722e6c44679d93cf6e7f43f48a)
+        marker_dcbacbda7fe740e7a1349077b629b1d3.bindPopup(popup_31d14430abc942948d7b01d329c72734)
         ;
 
         
     
     
-            marker_123e786b1af743ed9e7b5eabed9adcb7.bindTooltip(
+            marker_dcbacbda7fe740e7a1349077b629b1d3.bindTooltip(
                 `<div>
                      Click for more info
                  </div>`,
@@ -94,32 +114,32 @@
             );
         
     
-            var marker_b6a4eb8a403e46dc9acc3cadb9a4e4dc = L.marker(
-                [43.65013, -79.39096],
+            var marker_4fcbdd1c46fc406ebe06cb305e2c1deb = L.marker(
+                [45.40322, -75.72518],
                 {}
-            ).addTo(map_9755371c296d42a1919b59fcde915fbd);
+            ).addTo(map_a3498b587ad04aa5903535b3ebeaac7c);
         
     
-            var icon_e82b3147f0204d5e960dd59db276b17a = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            var icon_13e1ec93902f48589d1c1c58d43f39e3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
             );
-            marker_b6a4eb8a403e46dc9acc3cadb9a4e4dc.setIcon(icon_e82b3147f0204d5e960dd59db276b17a);
+            marker_4fcbdd1c46fc406ebe06cb305e2c1deb.setIcon(icon_13e1ec93902f48589d1c1c58d43f39e3);
         
     
-        var popup_395e301750bb42438c380ec415794c99 = L.popup({"maxWidth": "100%"});
+        var popup_4b9b1e8526464641bfcccbe18cc90358 = L.popup({"maxWidth": "100%"});
 
         
-            var html_c2ebd87dc9e8482289d89cfbce04a96b = $(`<div id="html_c2ebd87dc9e8482289d89cfbce04a96b" style="width: 100.0%; height: 100.0%;">250 Queen Street W</div>`)[0];
-            popup_395e301750bb42438c380ec415794c99.setContent(html_c2ebd87dc9e8482289d89cfbce04a96b);
+            var html_66d5cc49b6954b2bb8a76283ab0ebfb3 = $(`<div id="html_66d5cc49b6954b2bb8a76283ab0ebfb3" style="width: 100.0%; height: 100.0%;">1082 Wellington Street W</div>`)[0];
+            popup_4b9b1e8526464641bfcccbe18cc90358.setContent(html_66d5cc49b6954b2bb8a76283ab0ebfb3);
         
 
-        marker_b6a4eb8a403e46dc9acc3cadb9a4e4dc.bindPopup(popup_395e301750bb42438c380ec415794c99)
+        marker_4fcbdd1c46fc406ebe06cb305e2c1deb.bindPopup(popup_4b9b1e8526464641bfcccbe18cc90358)
         ;
 
         
     
     
-            marker_b6a4eb8a403e46dc9acc3cadb9a4e4dc.bindTooltip(
+            marker_4fcbdd1c46fc406ebe06cb305e2c1deb.bindTooltip(
                 `<div>
                      Click for more info
                  </div>`,
@@ -127,32 +147,32 @@
             );
         
     
-            var marker_0587daed47ba4fa086037f0bc5683c3e = L.marker(
-                [43.65443, -79.3759199],
+            var marker_ee3299809a8340e3bbe00bedcfe88747 = L.marker(
+                [45.4270152, -75.6886615],
                 {}
-            ).addTo(map_9755371c296d42a1919b59fcde915fbd);
+            ).addTo(map_a3498b587ad04aa5903535b3ebeaac7c);
         
     
-            var icon_5034a22b987c42cd81a766207039fc03 = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            var icon_632ff3d798f9435da453cfea73076557 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
             );
-            marker_0587daed47ba4fa086037f0bc5683c3e.setIcon(icon_5034a22b987c42cd81a766207039fc03);
+            marker_ee3299809a8340e3bbe00bedcfe88747.setIcon(icon_632ff3d798f9435da453cfea73076557);
         
     
-        var popup_021a4d5d70e44dcebf674dca7ed33eea = L.popup({"maxWidth": "100%"});
+        var popup_cc8c091afcbc4db9bc0d48238eece9b6 = L.popup({"maxWidth": "100%"});
 
         
-            var html_133b7bfd29f549fab14a24931c077c4e = $(`<div id="html_133b7bfd29f549fab14a24931c077c4e" style="width: 100.0%; height: 100.0%;">167 Church Street</div>`)[0];
-            popup_021a4d5d70e44dcebf674dca7ed33eea.setContent(html_133b7bfd29f549fab14a24931c077c4e);
+            var html_949ddfa18782454a83b9eca9446f805b = $(`<div id="html_949ddfa18782454a83b9eca9446f805b" style="width: 100.0%; height: 100.0%;">14 Waller Street</div>`)[0];
+            popup_cc8c091afcbc4db9bc0d48238eece9b6.setContent(html_949ddfa18782454a83b9eca9446f805b);
         
 
-        marker_0587daed47ba4fa086037f0bc5683c3e.bindPopup(popup_021a4d5d70e44dcebf674dca7ed33eea)
+        marker_ee3299809a8340e3bbe00bedcfe88747.bindPopup(popup_cc8c091afcbc4db9bc0d48238eece9b6)
         ;
 
         
     
     
-            marker_0587daed47ba4fa086037f0bc5683c3e.bindTooltip(
+            marker_ee3299809a8340e3bbe00bedcfe88747.bindTooltip(
                 `<div>
                      Click for more info
                  </div>`,
@@ -160,32 +180,32 @@
             );
         
     
-            var marker_9b2f70c18df14b2e8800cc28a428ed1b = L.marker(
-                [43.6511856165871, -79.3828380480409],
+            var marker_8a1bcd18ff1344c495439b5bf01d3f24 = L.marker(
+                [45.4232620850079, -75.6908707209625],
                 {}
-            ).addTo(map_9755371c296d42a1919b59fcde915fbd);
+            ).addTo(map_a3498b587ad04aa5903535b3ebeaac7c);
         
     
-            var icon_184dd0be41cd4b32bf634b3359f0a358 = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            var icon_0f335ba18b994a5da0bfea483f44dfc6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
             );
-            marker_9b2f70c18df14b2e8800cc28a428ed1b.setIcon(icon_184dd0be41cd4b32bf634b3359f0a358);
+            marker_8a1bcd18ff1344c495439b5bf01d3f24.setIcon(icon_0f335ba18b994a5da0bfea483f44dfc6);
         
     
-        var popup_639538fa9f544d5681676841c42dbc7b = L.popup({"maxWidth": "100%"});
+        var popup_598f68cad4704fa7b864640c598855fd = L.popup({"maxWidth": "100%"});
 
         
-            var html_16e1990d9074411e9911cd6195f5987c = $(`<div id="html_16e1990d9074411e9911cd6195f5987c" style="width: 100.0%; height: 100.0%;">12 65 Queen Street W</div>`)[0];
-            popup_639538fa9f544d5681676841c42dbc7b.setContent(html_16e1990d9074411e9911cd6195f5987c);
+            var html_e6f39442671742338ac80be84967f755 = $(`<div id="html_e6f39442671742338ac80be84967f755" style="width: 100.0%; height: 100.0%;">Rideau To Dow's Lake</div>`)[0];
+            popup_598f68cad4704fa7b864640c598855fd.setContent(html_e6f39442671742338ac80be84967f755);
         
 
-        marker_9b2f70c18df14b2e8800cc28a428ed1b.bindPopup(popup_639538fa9f544d5681676841c42dbc7b)
+        marker_8a1bcd18ff1344c495439b5bf01d3f24.bindPopup(popup_598f68cad4704fa7b864640c598855fd)
         ;
 
         
     
     
-            marker_9b2f70c18df14b2e8800cc28a428ed1b.bindTooltip(
+            marker_8a1bcd18ff1344c495439b5bf01d3f24.bindTooltip(
                 `<div>
                      Click for more info
                  </div>`,
@@ -193,32 +213,32 @@
             );
         
     
-            var marker_31d75fdd9d684e179b632ca00bef68e5 = L.marker(
-                [43.6522724, -79.3788112],
+            var marker_052ca791bdf14a25a0a99a6dfd653f10 = L.marker(
+                [45.4145829798555, -75.6482752862068],
                 {}
-            ).addTo(map_9755371c296d42a1919b59fcde915fbd);
+            ).addTo(map_a3498b587ad04aa5903535b3ebeaac7c);
         
     
-            var icon_26a07d6c592b4f03b820e8081244e164 = L.AwesomeMarkers.icon(
+            var icon_b0f03623c7134adba022a87eee87a8d3 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
             );
-            marker_31d75fdd9d684e179b632ca00bef68e5.setIcon(icon_26a07d6c592b4f03b820e8081244e164);
+            marker_052ca791bdf14a25a0a99a6dfd653f10.setIcon(icon_b0f03623c7134adba022a87eee87a8d3);
         
     
-        var popup_963ae84cb2e14b8e88711586b9095bda = L.popup({"maxWidth": "100%"});
+        var popup_a21aa83b89c8460daac7334c1cbe6fc5 = L.popup({"maxWidth": "100%"});
 
         
-            var html_c1858c93dbf3497eb001524bafe11a65 = $(`<div id="html_c1858c93dbf3497eb001524bafe11a65" style="width: 100.0%; height: 100.0%;">1 Queen Street E</div>`)[0];
-            popup_963ae84cb2e14b8e88711586b9095bda.setContent(html_c1858c93dbf3497eb001524bafe11a65);
+            var html_e3010bcf7f3f4aeaa7f9013ae0f7b366 = $(`<div id="html_e3010bcf7f3f4aeaa7f9013ae0f7b366" style="width: 100.0%; height: 100.0%;">500 Terminal Avenue</div>`)[0];
+            popup_a21aa83b89c8460daac7334c1cbe6fc5.setContent(html_e3010bcf7f3f4aeaa7f9013ae0f7b366);
         
 
-        marker_31d75fdd9d684e179b632ca00bef68e5.bindPopup(popup_963ae84cb2e14b8e88711586b9095bda)
+        marker_052ca791bdf14a25a0a99a6dfd653f10.bindPopup(popup_a21aa83b89c8460daac7334c1cbe6fc5)
         ;
 
         
     
     
-            marker_31d75fdd9d684e179b632ca00bef68e5.bindTooltip(
+            marker_052ca791bdf14a25a0a99a6dfd653f10.bindTooltip(
                 `<div>
                      Click for more info
                  </div>`,
@@ -226,32 +246,32 @@
             );
         
     
-            var marker_852091942fd749f897a825e21b406d53 = L.marker(
-                [43.64851, -79.3958435],
+            var marker_c7fcd1e0f4a84dc69f9293fd1af964f9 = L.marker(
+                [45.4283342859617, -75.6935446547828],
                 {}
-            ).addTo(map_9755371c296d42a1919b59fcde915fbd);
+            ).addTo(map_a3498b587ad04aa5903535b3ebeaac7c);
         
     
-            var icon_7679ad8cda834d13bb4db863070478f1 = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            var icon_6f629bb295094a31956e0f2efa3d84e4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
             );
-            marker_852091942fd749f897a825e21b406d53.setIcon(icon_7679ad8cda834d13bb4db863070478f1);
+            marker_c7fcd1e0f4a84dc69f9293fd1af964f9.setIcon(icon_6f629bb295094a31956e0f2efa3d84e4);
         
     
-        var popup_a014c1e19e6d4cb8b820764e1c96dd4b = L.popup({"maxWidth": "100%"});
+        var popup_f77995b225cf49d18a9117b3254a1ff6 = L.popup({"maxWidth": "100%"});
 
         
-            var html_ca4bca35338f474bb5e8af764740362e = $(`<div id="html_ca4bca35338f474bb5e8af764740362e" style="width: 100.0%; height: 100.0%;">163 Spadina Avenue</div>`)[0];
-            popup_a014c1e19e6d4cb8b820764e1c96dd4b.setContent(html_ca4bca35338f474bb5e8af764740362e);
+            var html_00a2e3cf8df84c5aabe730633b7f596e = $(`<div id="html_00a2e3cf8df84c5aabe730633b7f596e" style="width: 100.0%; height: 100.0%;">14 ByWard Market Square</div>`)[0];
+            popup_f77995b225cf49d18a9117b3254a1ff6.setContent(html_00a2e3cf8df84c5aabe730633b7f596e);
         
 
-        marker_852091942fd749f897a825e21b406d53.bindPopup(popup_a014c1e19e6d4cb8b820764e1c96dd4b)
+        marker_c7fcd1e0f4a84dc69f9293fd1af964f9.bindPopup(popup_f77995b225cf49d18a9117b3254a1ff6)
         ;
 
         
     
     
-            marker_852091942fd749f897a825e21b406d53.bindTooltip(
+            marker_c7fcd1e0f4a84dc69f9293fd1af964f9.bindTooltip(
                 `<div>
                      Click for more info
                  </div>`,
@@ -259,32 +279,32 @@
             );
         
     
-            var marker_3a2a1f899bd74d76b4e4e5fa73652c39 = L.marker(
-                [43.6498604, -79.3853302],
+            var marker_c0b48e06b7b947be84bad606612a2375 = L.marker(
+                [45.4270979937672, -75.6890030577779],
                 {}
-            ).addTo(map_9755371c296d42a1919b59fcde915fbd);
+            ).addTo(map_a3498b587ad04aa5903535b3ebeaac7c);
         
     
-            var icon_1baca269099942dc91b89674ace6b223 = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            var icon_932096c3195c4d4bbabdf98f77ff5b2d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
             );
-            marker_3a2a1f899bd74d76b4e4e5fa73652c39.setIcon(icon_1baca269099942dc91b89674ace6b223);
+            marker_c0b48e06b7b947be84bad606612a2375.setIcon(icon_932096c3195c4d4bbabdf98f77ff5b2d);
         
     
-        var popup_0e7c4e66f8fd43dc869782d6f16d26e8 = L.popup({"maxWidth": "100%"});
+        var popup_92b0a88919704820b2c79c841ffa5f11 = L.popup({"maxWidth": "100%"});
 
         
-            var html_26f17ce4aea646259f9a282b6d928e76 = $(`<div id="html_26f17ce4aea646259f9a282b6d928e76" style="width: 100.0%; height: 100.0%;">Unit 102 145 Richmond Street W</div>`)[0];
-            popup_0e7c4e66f8fd43dc869782d6f16d26e8.setContent(html_26f17ce4aea646259f9a282b6d928e76);
+            var html_31b9f526a7104d8c92eb057f22091ab5 = $(`<div id="html_31b9f526a7104d8c92eb057f22091ab5" style="width: 100.0%; height: 100.0%;">178 Rideau Street</div>`)[0];
+            popup_92b0a88919704820b2c79c841ffa5f11.setContent(html_31b9f526a7104d8c92eb057f22091ab5);
         
 
-        marker_3a2a1f899bd74d76b4e4e5fa73652c39.bindPopup(popup_0e7c4e66f8fd43dc869782d6f16d26e8)
+        marker_c0b48e06b7b947be84bad606612a2375.bindPopup(popup_92b0a88919704820b2c79c841ffa5f11)
         ;
 
         
     
     
-            marker_3a2a1f899bd74d76b4e4e5fa73652c39.bindTooltip(
+            marker_c0b48e06b7b947be84bad606612a2375.bindTooltip(
                 `<div>
                      Click for more info
                  </div>`,
@@ -292,32 +312,32 @@
             );
         
     
-            var marker_66bd75f1967b4181b99736be6e557c72 = L.marker(
-                [43.65, -79.38316],
+            var marker_7367eb235f064238ab0825b1e998c2ac = L.marker(
+                [45.40698, -75.70525],
                 {}
-            ).addTo(map_9755371c296d42a1919b59fcde915fbd);
+            ).addTo(map_a3498b587ad04aa5903535b3ebeaac7c);
         
     
-            var icon_ba2a6154c4d246428685a50d73009084 = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            var icon_7784ff86bdf14b1391881f0adfe198ed = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
             );
-            marker_66bd75f1967b4181b99736be6e557c72.setIcon(icon_ba2a6154c4d246428685a50d73009084);
+            marker_7367eb235f064238ab0825b1e998c2ac.setIcon(icon_7784ff86bdf14b1391881f0adfe198ed);
         
     
-        var popup_b1da8ada20054d5db3f360a9591e7133 = L.popup({"maxWidth": "100%"});
+        var popup_79ea7fda119e438c9cb208b52ac9170d = L.popup({"maxWidth": "100%"});
 
         
-            var html_86f080cb082d4a339a0570d70477b52e = $(`<div id="html_86f080cb082d4a339a0570d70477b52e" style="width: 100.0%; height: 100.0%;">120 Adelaide Street W</div>`)[0];
-            popup_b1da8ada20054d5db3f360a9591e7133.setContent(html_86f080cb082d4a339a0570d70477b52e);
+            var html_54869ccdedd446b1808668fed0364c00 = $(`<div id="html_54869ccdedd446b1808668fed0364c00" style="width: 100.0%; height: 100.0%;">750 Gladstone Street</div>`)[0];
+            popup_79ea7fda119e438c9cb208b52ac9170d.setContent(html_54869ccdedd446b1808668fed0364c00);
         
 
-        marker_66bd75f1967b4181b99736be6e557c72.bindPopup(popup_b1da8ada20054d5db3f360a9591e7133)
+        marker_7367eb235f064238ab0825b1e998c2ac.bindPopup(popup_79ea7fda119e438c9cb208b52ac9170d)
         ;
 
         
     
     
-            marker_66bd75f1967b4181b99736be6e557c72.bindTooltip(
+            marker_7367eb235f064238ab0825b1e998c2ac.bindTooltip(
                 `<div>
                      Click for more info
                  </div>`,
@@ -325,32 +345,32 @@
             );
         
     
-            var marker_abd7bf7331cc418691638b3664676556 = L.marker(
-                [43.647972776214, -79.396292070012],
+            var marker_06221242499044bfbb2ade721148a897 = L.marker(
+                [45.42942, -75.69284],
                 {}
-            ).addTo(map_9755371c296d42a1919b59fcde915fbd);
+            ).addTo(map_a3498b587ad04aa5903535b3ebeaac7c);
         
     
-            var icon_6e8822c3156f4d7e9d0e0107a52b3974 = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            var icon_bfd52efda5144b16a9510c25fd39c18e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
             );
-            marker_abd7bf7331cc418691638b3664676556.setIcon(icon_6e8822c3156f4d7e9d0e0107a52b3974);
+            marker_06221242499044bfbb2ade721148a897.setIcon(icon_bfd52efda5144b16a9510c25fd39c18e);
         
     
-        var popup_dfa669c54b4b4cb4b96804db83e2ab09 = L.popup({"maxWidth": "100%"});
+        var popup_bc1e352267ff49e8b9f5635770a18ee6 = L.popup({"maxWidth": "100%"});
 
         
-            var html_6696ebdc5ef945998d5beb67b23089d0 = $(`<div id="html_6696ebdc5ef945998d5beb67b23089d0" style="width: 100.0%; height: 100.0%;">438 Richmond Street W</div>`)[0];
-            popup_dfa669c54b4b4cb4b96804db83e2ab09.setContent(html_6696ebdc5ef945998d5beb67b23089d0);
+            var html_7b7c3ef3f98546e896216e39062ab7dc = $(`<div id="html_7b7c3ef3f98546e896216e39062ab7dc" style="width: 100.0%; height: 100.0%;">89 Clarence Street</div>`)[0];
+            popup_bc1e352267ff49e8b9f5635770a18ee6.setContent(html_7b7c3ef3f98546e896216e39062ab7dc);
         
 
-        marker_abd7bf7331cc418691638b3664676556.bindPopup(popup_dfa669c54b4b4cb4b96804db83e2ab09)
+        marker_06221242499044bfbb2ade721148a897.bindPopup(popup_bc1e352267ff49e8b9f5635770a18ee6)
         ;
 
         
     
     
-            marker_abd7bf7331cc418691638b3664676556.bindTooltip(
+            marker_06221242499044bfbb2ade721148a897.bindTooltip(
                 `<div>
                      Click for more info
                  </div>`,
@@ -358,32 +378,32 @@
             );
         
     
-            var marker_ccf887ff05d344b1a23252a5d137e8ac = L.marker(
-                [43.64757, -79.39263],
+            var marker_4f13b869f04b47a3add8b33da520ed27 = L.marker(
+                [45.40065, -75.70987],
                 {}
-            ).addTo(map_9755371c296d42a1919b59fcde915fbd);
+            ).addTo(map_a3498b587ad04aa5903535b3ebeaac7c);
         
     
-            var icon_018299f338354c0297e6d683177f33ee = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            var icon_9c02ec40c5fc4187845fafa8af84f4bd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
             );
-            marker_ccf887ff05d344b1a23252a5d137e8ac.setIcon(icon_018299f338354c0297e6d683177f33ee);
+            marker_4f13b869f04b47a3add8b33da520ed27.setIcon(icon_9c02ec40c5fc4187845fafa8af84f4bd);
         
     
-        var popup_baa1788b4b3043faacfaa092f97b8055 = L.popup({"maxWidth": "100%"});
+        var popup_2bcdfbce6e7042798d7794cefd30c3c2 = L.popup({"maxWidth": "100%"});
 
         
-            var html_f2b388dfdb434a12b184f137bccf141a = $(`<div id="html_f2b388dfdb434a12b184f137bccf141a" style="width: 100.0%; height: 100.0%;">338 Adelaide Street W</div>`)[0];
-            popup_baa1788b4b3043faacfaa092f97b8055.setContent(html_f2b388dfdb434a12b184f137bccf141a);
+            var html_131ad5c56ff4478b8edc7916eedb0e69 = $(`<div id="html_131ad5c56ff4478b8edc7916eedb0e69" style="width: 100.0%; height: 100.0%;">416 Preston Street</div>`)[0];
+            popup_2bcdfbce6e7042798d7794cefd30c3c2.setContent(html_131ad5c56ff4478b8edc7916eedb0e69);
         
 
-        marker_ccf887ff05d344b1a23252a5d137e8ac.bindPopup(popup_baa1788b4b3043faacfaa092f97b8055)
+        marker_4f13b869f04b47a3add8b33da520ed27.bindPopup(popup_2bcdfbce6e7042798d7794cefd30c3c2)
         ;
 
         
     
     
-            marker_ccf887ff05d344b1a23252a5d137e8ac.bindTooltip(
+            marker_4f13b869f04b47a3add8b33da520ed27.bindTooltip(
                 `<div>
                      Click for more info
                  </div>`,
@@ -391,32 +411,32 @@
             );
         
     
-            var marker_7300a5bc7da043bdb72773f8ca1989e8 = L.marker(
-                [43.64739, -79.4038],
+            var marker_1cafe8133afe4cb7a1a109a056d0f737 = L.marker(
+                [45.35658, -75.80243],
                 {}
-            ).addTo(map_9755371c296d42a1919b59fcde915fbd);
+            ).addTo(map_a3498b587ad04aa5903535b3ebeaac7c);
         
     
-            var icon_7b7cc372aee04aa390a7d3a2b5c1a017 = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            var icon_d77da977d6a842bf9edc2b8b89886343 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
             );
-            marker_7300a5bc7da043bdb72773f8ca1989e8.setIcon(icon_7b7cc372aee04aa390a7d3a2b5c1a017);
+            marker_1cafe8133afe4cb7a1a109a056d0f737.setIcon(icon_d77da977d6a842bf9edc2b8b89886343);
         
     
-        var popup_f86aaa563b0843f092697cab00f89062 = L.popup({"maxWidth": "100%"});
+        var popup_7f69c93839614caa940c5355ab7c735e = L.popup({"maxWidth": "100%"});
 
         
-            var html_d5581505e225417387d78b32fd308b0e = $(`<div id="html_d5581505e225417387d78b32fd308b0e" style="width: 100.0%; height: 100.0%;">580-584 Queen Street W</div>`)[0];
-            popup_f86aaa563b0843f092697cab00f89062.setContent(html_d5581505e225417387d78b32fd308b0e);
+            var html_eae3281b94ae4d0594787a7111099c71 = $(`<div id="html_eae3281b94ae4d0594787a7111099c71" style="width: 100.0%; height: 100.0%;">2949 Carling Avenue</div>`)[0];
+            popup_7f69c93839614caa940c5355ab7c735e.setContent(html_eae3281b94ae4d0594787a7111099c71);
         
 
-        marker_7300a5bc7da043bdb72773f8ca1989e8.bindPopup(popup_f86aaa563b0843f092697cab00f89062)
+        marker_1cafe8133afe4cb7a1a109a056d0f737.bindPopup(popup_7f69c93839614caa940c5355ab7c735e)
         ;
 
         
     
     
-            marker_7300a5bc7da043bdb72773f8ca1989e8.bindTooltip(
+            marker_1cafe8133afe4cb7a1a109a056d0f737.bindTooltip(
                 `<div>
                      Click for more info
                  </div>`,
@@ -424,32 +444,32 @@
             );
         
     
-            var marker_f0f0adf0f76948648185d0e5175f2b23 = L.marker(
-                [43.64816, -79.38345],
+            var marker_7b77a05441924fa28f70de3da290e58e = L.marker(
+                [45.4086192747707, -75.7129454612732],
                 {}
-            ).addTo(map_9755371c296d42a1919b59fcde915fbd);
+            ).addTo(map_a3498b587ad04aa5903535b3ebeaac7c);
         
     
-            var icon_ebb2eb66e494418db9001c352a49be32 = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            var icon_761c399d4bcf4a57b3703dcf56b19317 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
             );
-            marker_f0f0adf0f76948648185d0e5175f2b23.setIcon(icon_ebb2eb66e494418db9001c352a49be32);
+            marker_7b77a05441924fa28f70de3da290e58e.setIcon(icon_761c399d4bcf4a57b3703dcf56b19317);
         
     
-        var popup_05418f1dc9994c719c0e0b267c78b920 = L.popup({"maxWidth": "100%"});
+        var popup_8c700fb845bf4cf5848b103bbb3cd66d = L.popup({"maxWidth": "100%"});
 
         
-            var html_65d6d3c95f994861828e5f7e2679f5fd = $(`<div id="html_65d6d3c95f994861828e5f7e2679f5fd" style="width: 100.0%; height: 100.0%;">130 King Street W</div>`)[0];
-            popup_05418f1dc9994c719c0e0b267c78b920.setContent(html_65d6d3c95f994861828e5f7e2679f5fd);
+            var html_2831a399994a44bc810a36de38bb4205 = $(`<div id="html_2831a399994a44bc810a36de38bb4205" style="width: 100.0%; height: 100.0%;">870 Somerset Street W</div>`)[0];
+            popup_8c700fb845bf4cf5848b103bbb3cd66d.setContent(html_2831a399994a44bc810a36de38bb4205);
         
 
-        marker_f0f0adf0f76948648185d0e5175f2b23.bindPopup(popup_05418f1dc9994c719c0e0b267c78b920)
+        marker_7b77a05441924fa28f70de3da290e58e.bindPopup(popup_8c700fb845bf4cf5848b103bbb3cd66d)
         ;
 
         
     
     
-            marker_f0f0adf0f76948648185d0e5175f2b23.bindTooltip(
+            marker_7b77a05441924fa28f70de3da290e58e.bindTooltip(
                 `<div>
                      Click for more info
                  </div>`,
@@ -457,32 +477,32 @@
             );
         
     
-            var marker_2b8f087505194464a97e2a89e70ff6a5 = L.marker(
-                [43.64979926622, -79.3793812386231],
+            var marker_8f0b56a46f1f42bda31bbcc416c0a423 = L.marker(
+                [45.41689, -75.69968],
                 {}
-            ).addTo(map_9755371c296d42a1919b59fcde915fbd);
+            ).addTo(map_a3498b587ad04aa5903535b3ebeaac7c);
         
     
-            var icon_60fa61ef1ae94eedb2494a39bdaf972b = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            var icon_3fab4bcd15e54d0f826a98b9bee02172 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
             );
-            marker_2b8f087505194464a97e2a89e70ff6a5.setIcon(icon_60fa61ef1ae94eedb2494a39bdaf972b);
+            marker_8f0b56a46f1f42bda31bbcc416c0a423.setIcon(icon_3fab4bcd15e54d0f826a98b9bee02172);
         
     
-        var popup_05505f4885164bc1934cbc766e47e1e2 = L.popup({"maxWidth": "100%"});
+        var popup_14986a756ff44b918a75691ff0781e73 = L.popup({"maxWidth": "100%"});
 
         
-            var html_1e81cd6ab4b44a6b8583077052ecee56 = $(`<div id="html_1e81cd6ab4b44a6b8583077052ecee56" style="width: 100.0%; height: 100.0%;">Scotia Plaza</div>`)[0];
-            popup_05505f4885164bc1934cbc766e47e1e2.setContent(html_1e81cd6ab4b44a6b8583077052ecee56);
+            var html_b2be417a7b8c4814b37b0126c09e8ca7 = $(`<div id="html_b2be417a7b8c4814b37b0126c09e8ca7" style="width: 100.0%; height: 100.0%;">239 Nepean Street</div>`)[0];
+            popup_14986a756ff44b918a75691ff0781e73.setContent(html_b2be417a7b8c4814b37b0126c09e8ca7);
         
 
-        marker_2b8f087505194464a97e2a89e70ff6a5.bindPopup(popup_05505f4885164bc1934cbc766e47e1e2)
+        marker_8f0b56a46f1f42bda31bbcc416c0a423.bindPopup(popup_14986a756ff44b918a75691ff0781e73)
         ;
 
         
     
     
-            marker_2b8f087505194464a97e2a89e70ff6a5.bindTooltip(
+            marker_8f0b56a46f1f42bda31bbcc416c0a423.bindTooltip(
                 `<div>
                      Click for more info
                  </div>`,
@@ -490,32 +510,32 @@
             );
         
     
-            var marker_e05e5949a2d148a5815d74193a99dca6 = L.marker(
-                [43.65031, -79.37801],
+            var marker_efbaa891bbde447c90d7d15fdecbf908 = L.marker(
+                [45.4074243, -75.703212],
                 {}
-            ).addTo(map_9755371c296d42a1919b59fcde915fbd);
+            ).addTo(map_a3498b587ad04aa5903535b3ebeaac7c);
         
     
-            var icon_204a55ed3ae440f293b6836ff0791671 = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            var icon_61d5601ca1b44118b93a38b2a6aca32b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
             );
-            marker_e05e5949a2d148a5815d74193a99dca6.setIcon(icon_204a55ed3ae440f293b6836ff0791671);
+            marker_efbaa891bbde447c90d7d15fdecbf908.setIcon(icon_61d5601ca1b44118b93a38b2a6aca32b);
         
     
-        var popup_d5e05c76cafa422e8a9ef86683e88350 = L.popup({"maxWidth": "100%"});
+        var popup_acd49eda345b4d9698be84cb9183abd5 = L.popup({"maxWidth": "100%"});
 
         
-            var html_156974c48dc54530aa4a2aa7cd564cc4 = $(`<div id="html_156974c48dc54530aa4a2aa7cd564cc4" style="width: 100.0%; height: 100.0%;">1 Adelaide St E</div>`)[0];
-            popup_d5e05c76cafa422e8a9ef86683e88350.setContent(html_156974c48dc54530aa4a2aa7cd564cc4);
+            var html_332e1b2987f14ea1bd991ea9b2c78b56 = $(`<div id="html_332e1b2987f14ea1bd991ea9b2c78b56" style="width: 100.0%; height: 100.0%;">479 Bronson Avenue</div>`)[0];
+            popup_acd49eda345b4d9698be84cb9183abd5.setContent(html_332e1b2987f14ea1bd991ea9b2c78b56);
         
 
-        marker_e05e5949a2d148a5815d74193a99dca6.bindPopup(popup_d5e05c76cafa422e8a9ef86683e88350)
+        marker_efbaa891bbde447c90d7d15fdecbf908.bindPopup(popup_acd49eda345b4d9698be84cb9183abd5)
         ;
 
         
     
     
-            marker_e05e5949a2d148a5815d74193a99dca6.bindTooltip(
+            marker_efbaa891bbde447c90d7d15fdecbf908.bindTooltip(
                 `<div>
                      Click for more info
                  </div>`,
@@ -523,32 +543,32 @@
             );
         
     
-            var marker_d7349cfda4464f12a771be63cac30494 = L.marker(
-                [43.67655, -79.35835],
+            var marker_8cae257fa42441e8b10f27fba9023ec7 = L.marker(
+                [45.4127142543556, -75.688514560461],
                 {}
-            ).addTo(map_9755371c296d42a1919b59fcde915fbd);
+            ).addTo(map_a3498b587ad04aa5903535b3ebeaac7c);
         
     
-            var icon_6b8733e3279b45808397f237e9512a11 = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            var icon_0b2ffd862ed5403eafc06125caeb6c07 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
             );
-            marker_d7349cfda4464f12a771be63cac30494.setIcon(icon_6b8733e3279b45808397f237e9512a11);
+            marker_8cae257fa42441e8b10f27fba9023ec7.setIcon(icon_0b2ffd862ed5403eafc06125caeb6c07);
         
     
-        var popup_27c15e4b2d68469fbfa3aaf2d174ca36 = L.popup({"maxWidth": "100%"});
+        var popup_d503cccf5194476f8da4050ee421810b = L.popup({"maxWidth": "100%"});
 
         
-            var html_bd08ac1bdd024216b6225a0ea7ce0bbe = $(`<div id="html_bd08ac1bdd024216b6225a0ea7ce0bbe" style="width: 100.0%; height: 100.0%;">106 Danforth Avenue</div>`)[0];
-            popup_27c15e4b2d68469fbfa3aaf2d174ca36.setContent(html_bd08ac1bdd024216b6225a0ea7ce0bbe);
+            var html_a66d38c0aba740de84968fb9d1c02828 = $(`<div id="html_a66d38c0aba740de84968fb9d1c02828" style="width: 100.0%; height: 100.0%;">240 McLeod Street</div>`)[0];
+            popup_d503cccf5194476f8da4050ee421810b.setContent(html_a66d38c0aba740de84968fb9d1c02828);
         
 
-        marker_d7349cfda4464f12a771be63cac30494.bindPopup(popup_27c15e4b2d68469fbfa3aaf2d174ca36)
+        marker_8cae257fa42441e8b10f27fba9023ec7.bindPopup(popup_d503cccf5194476f8da4050ee421810b)
         ;
 
         
     
     
-            marker_d7349cfda4464f12a771be63cac30494.bindTooltip(
+            marker_8cae257fa42441e8b10f27fba9023ec7.bindTooltip(
                 `<div>
                      Click for more info
                  </div>`,
@@ -556,32 +576,32 @@
             );
         
     
-            var marker_e5172a700e3145dbb500768b32ad4e99 = L.marker(
-                [43.651361072133, -79.374674928391],
+            var marker_68c0f923bd9742c799412497cdae1455 = L.marker(
+                [45.4098373, -75.710294],
                 {}
-            ).addTo(map_9755371c296d42a1919b59fcde915fbd);
+            ).addTo(map_a3498b587ad04aa5903535b3ebeaac7c);
         
     
-            var icon_2d83715eb6d64697bf5e49d5a7b151c8 = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            var icon_3eff14081d754368a7d7dbb3626a1b5b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
             );
-            marker_e5172a700e3145dbb500768b32ad4e99.setIcon(icon_2d83715eb6d64697bf5e49d5a7b151c8);
+            marker_68c0f923bd9742c799412497cdae1455.setIcon(icon_3eff14081d754368a7d7dbb3626a1b5b);
         
     
-        var popup_c4fb7a39b1cd490f85058b0f5873444f = L.popup({"maxWidth": "100%"});
+        var popup_fe5caa7625d645448f4dd37381d4bd22 = L.popup({"maxWidth": "100%"});
 
         
-            var html_19749cd857cf4982a15468e6c38f12a8 = $(`<div id="html_19749cd857cf4982a15468e6c38f12a8" style="width: 100.0%; height: 100.0%;">82 Adelaide Street E</div>`)[0];
-            popup_c4fb7a39b1cd490f85058b0f5873444f.setContent(html_19749cd857cf4982a15468e6c38f12a8);
+            var html_3966833c57f942da94fda6495487f532 = $(`<div id="html_3966833c57f942da94fda6495487f532" style="width: 100.0%; height: 100.0%;">781 Somerset Street W</div>`)[0];
+            popup_fe5caa7625d645448f4dd37381d4bd22.setContent(html_3966833c57f942da94fda6495487f532);
         
 
-        marker_e5172a700e3145dbb500768b32ad4e99.bindPopup(popup_c4fb7a39b1cd490f85058b0f5873444f)
+        marker_68c0f923bd9742c799412497cdae1455.bindPopup(popup_fe5caa7625d645448f4dd37381d4bd22)
         ;
 
         
     
     
-            marker_e5172a700e3145dbb500768b32ad4e99.bindTooltip(
+            marker_68c0f923bd9742c799412497cdae1455.bindTooltip(
                 `<div>
                      Click for more info
                  </div>`,
@@ -589,32 +609,32 @@
             );
         
     
-            var marker_5fd6fc1f52774ea698e7c6815c9e8a2d = L.marker(
-                [43.64842, -79.3819],
+            var marker_5917ba5255904b61bd48ba36615bafec = L.marker(
+                [45.42899, -75.69196],
                 {}
-            ).addTo(map_9755371c296d42a1919b59fcde915fbd);
+            ).addTo(map_a3498b587ad04aa5903535b3ebeaac7c);
         
     
-            var icon_a89f1fca5c304816ba9921a9b9a28241 = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            var icon_ed5ce0e5961f4c0f8461eef4fe6c1c83 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
             );
-            marker_5fd6fc1f52774ea698e7c6815c9e8a2d.setIcon(icon_a89f1fca5c304816ba9921a9b9a28241);
+            marker_5917ba5255904b61bd48ba36615bafec.setIcon(icon_ed5ce0e5961f4c0f8461eef4fe6c1c83);
         
     
-        var popup_021eaee8dafe4bd2aa340e27947cbe93 = L.popup({"maxWidth": "100%"});
+        var popup_a251b5def79a4f80b0717e2b7d52284a = L.popup({"maxWidth": "100%"});
 
         
-            var html_cce8a59b508846d68d340898afb2f7d1 = $(`<div id="html_cce8a59b508846d68d340898afb2f7d1" style="width: 100.0%; height: 100.0%;">1 First Canadian Place</div>`)[0];
-            popup_021eaee8dafe4bd2aa340e27947cbe93.setContent(html_cce8a59b508846d68d340898afb2f7d1);
+            var html_5b66e23be89d4b3c959758fd0ed1747a = $(`<div id="html_5b66e23be89d4b3c959758fd0ed1747a" style="width: 100.0%; height: 100.0%;">75 York Street</div>`)[0];
+            popup_a251b5def79a4f80b0717e2b7d52284a.setContent(html_5b66e23be89d4b3c959758fd0ed1747a);
         
 
-        marker_5fd6fc1f52774ea698e7c6815c9e8a2d.bindPopup(popup_021eaee8dafe4bd2aa340e27947cbe93)
+        marker_5917ba5255904b61bd48ba36615bafec.bindPopup(popup_a251b5def79a4f80b0717e2b7d52284a)
         ;
 
         
     
     
-            marker_5fd6fc1f52774ea698e7c6815c9e8a2d.bindTooltip(
+            marker_5917ba5255904b61bd48ba36615bafec.bindTooltip(
                 `<div>
                      Click for more info
                  </div>`,
@@ -622,32 +642,32 @@
             );
         
     
-            var marker_daa210213ab247109dfa9a38a135ee45 = L.marker(
-                [43.64926, -79.37838],
+            var marker_81d51377b5ad4274aedce23d36999148 = L.marker(
+                [45.4395156, -75.6749016],
                 {}
-            ).addTo(map_9755371c296d42a1919b59fcde915fbd);
+            ).addTo(map_a3498b587ad04aa5903535b3ebeaac7c);
         
     
-            var icon_2c2e9dae7aef46b3b9ad600e3ffc5ae2 = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            var icon_832ee083fe9d4a3ca9f79bc9c602bd89 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
             );
-            marker_daa210213ab247109dfa9a38a135ee45.setIcon(icon_2c2e9dae7aef46b3b9ad600e3ffc5ae2);
+            marker_81d51377b5ad4274aedce23d36999148.setIcon(icon_832ee083fe9d4a3ca9f79bc9c602bd89);
         
     
-        var popup_5188a01b10c948f9b1d0be3f48a266e3 = L.popup({"maxWidth": "100%"});
+        var popup_83a874757dfa4f3d8c4e016d1e4cd2e7 = L.popup({"maxWidth": "100%"});
 
         
-            var html_88a15cc3eb1a4e08b822d759971e2e4c = $(`<div id="html_88a15cc3eb1a4e08b822d759971e2e4c" style="width: 100.0%; height: 100.0%;">4 King Street W</div>`)[0];
-            popup_5188a01b10c948f9b1d0be3f48a266e3.setContent(html_88a15cc3eb1a4e08b822d759971e2e4c);
+            var html_27ea23d40b9941fb8669af1931885e5c = $(`<div id="html_27ea23d40b9941fb8669af1931885e5c" style="width: 100.0%; height: 100.0%;">62 Barrette street</div>`)[0];
+            popup_83a874757dfa4f3d8c4e016d1e4cd2e7.setContent(html_27ea23d40b9941fb8669af1931885e5c);
         
 
-        marker_daa210213ab247109dfa9a38a135ee45.bindPopup(popup_5188a01b10c948f9b1d0be3f48a266e3)
+        marker_81d51377b5ad4274aedce23d36999148.bindPopup(popup_83a874757dfa4f3d8c4e016d1e4cd2e7)
         ;
 
         
     
     
-            marker_daa210213ab247109dfa9a38a135ee45.bindTooltip(
+            marker_81d51377b5ad4274aedce23d36999148.bindTooltip(
                 `<div>
                      Click for more info
                  </div>`,
@@ -655,32 +675,32 @@
             );
         
     
-            var marker_0caa9ddd045f4d86b9b054d92d9f2567 = L.marker(
-                [43.646195616254, -79.391858935016],
+            var marker_ac48edfc10bc4e038f7c718c9604a38e = L.marker(
+                [45.4143624, -75.6952788],
                 {}
-            ).addTo(map_9755371c296d42a1919b59fcde915fbd);
+            ).addTo(map_a3498b587ad04aa5903535b3ebeaac7c);
         
     
-            var icon_617f6964b48a438c85ac9795caa90d8d = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            var icon_a0914b6ad823444ab6afec0ebc000b02 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
             );
-            marker_0caa9ddd045f4d86b9b054d92d9f2567.setIcon(icon_617f6964b48a438c85ac9795caa90d8d);
+            marker_ac48edfc10bc4e038f7c718c9604a38e.setIcon(icon_a0914b6ad823444ab6afec0ebc000b02);
         
     
-        var popup_4625c4f7937d44f3b0089fb5855aab56 = L.popup({"maxWidth": "100%"});
+        var popup_f8f1b721727d46b4bc59aea1111682bb = L.popup({"maxWidth": "100%"});
 
         
-            var html_5e84d715475946eb9af337350ff2ed87 = $(`<div id="html_5e84d715475946eb9af337350ff2ed87" style="width: 100.0%; height: 100.0%;">370 King Street W</div>`)[0];
-            popup_4625c4f7937d44f3b0089fb5855aab56.setContent(html_5e84d715475946eb9af337350ff2ed87);
+            var html_eb734c0787314b5e90eadae4db02c877 = $(`<div id="html_eb734c0787314b5e90eadae4db02c877" style="width: 100.0%; height: 100.0%;">329 Bank Street</div>`)[0];
+            popup_f8f1b721727d46b4bc59aea1111682bb.setContent(html_eb734c0787314b5e90eadae4db02c877);
         
 
-        marker_0caa9ddd045f4d86b9b054d92d9f2567.bindPopup(popup_4625c4f7937d44f3b0089fb5855aab56)
+        marker_ac48edfc10bc4e038f7c718c9604a38e.bindPopup(popup_f8f1b721727d46b4bc59aea1111682bb)
         ;
 
         
     
     
-            marker_0caa9ddd045f4d86b9b054d92d9f2567.bindTooltip(
+            marker_ac48edfc10bc4e038f7c718c9604a38e.bindTooltip(
                 `<div>
                      Click for more info
                  </div>`,
@@ -688,32 +708,32 @@
             );
         
     
-            var marker_d42d08b17f9b4837aa6acfa6c3467568 = L.marker(
-                [43.65183, -79.37261],
+            var marker_c2ad0dafce0047fbbeff134f1822040a = L.marker(
+                [45.40106, -75.7324],
                 {}
-            ).addTo(map_9755371c296d42a1919b59fcde915fbd);
+            ).addTo(map_a3498b587ad04aa5903535b3ebeaac7c);
         
     
-            var icon_684ceef70d384acab7e629e4a5040877 = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            var icon_ede25132fdd74f2cb097639964232d4c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
             );
-            marker_d42d08b17f9b4837aa6acfa6c3467568.setIcon(icon_684ceef70d384acab7e629e4a5040877);
+            marker_c2ad0dafce0047fbbeff134f1822040a.setIcon(icon_ede25132fdd74f2cb097639964232d4c);
         
     
-        var popup_4adf0d378748472ea03bc800f3f9e0a8 = L.popup({"maxWidth": "100%"});
+        var popup_ce3dc9e6f9924fd7a3681cc66715e917 = L.popup({"maxWidth": "100%"});
 
         
-            var html_c7b0ff0968234250857d136244daa638 = $(`<div id="html_c7b0ff0968234250857d136244daa638" style="width: 100.0%; height: 100.0%;">142 Adelaide Street East</div>`)[0];
-            popup_4adf0d378748472ea03bc800f3f9e0a8.setContent(html_c7b0ff0968234250857d136244daa638);
+            var html_f7d7507930054a6ea6bce92fbe41ff9d = $(`<div id="html_f7d7507930054a6ea6bce92fbe41ff9d" style="width: 100.0%; height: 100.0%;">79 Holland Avenue</div>`)[0];
+            popup_ce3dc9e6f9924fd7a3681cc66715e917.setContent(html_f7d7507930054a6ea6bce92fbe41ff9d);
         
 
-        marker_d42d08b17f9b4837aa6acfa6c3467568.bindPopup(popup_4adf0d378748472ea03bc800f3f9e0a8)
+        marker_c2ad0dafce0047fbbeff134f1822040a.bindPopup(popup_ce3dc9e6f9924fd7a3681cc66715e917)
         ;
 
         
     
     
-            marker_d42d08b17f9b4837aa6acfa6c3467568.bindTooltip(
+            marker_c2ad0dafce0047fbbeff134f1822040a.bindTooltip(
                 `<div>
                      Click for more info
                  </div>`,
@@ -721,32 +741,32 @@
             );
         
     
-            var marker_9c65da4f657b45718096a5d8fb9910c9 = L.marker(
-                [43.6458685168352, -79.3929583579302],
+            var marker_6a67917f2824400dad9cdd2491276db6 = L.marker(
+                [45.3454246, -75.69274],
                 {}
-            ).addTo(map_9755371c296d42a1919b59fcde915fbd);
+            ).addTo(map_a3498b587ad04aa5903535b3ebeaac7c);
         
     
-            var icon_d85e182b2b4145c3a8248e0e07157ca9 = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            var icon_fb46b75a442749de96b36f5768ddfff0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
             );
-            marker_9c65da4f657b45718096a5d8fb9910c9.setIcon(icon_d85e182b2b4145c3a8248e0e07157ca9);
+            marker_6a67917f2824400dad9cdd2491276db6.setIcon(icon_fb46b75a442749de96b36f5768ddfff0);
         
     
-        var popup_46b2dea6581c467b99cf036458b87f14 = L.popup({"maxWidth": "100%"});
+        var popup_673183923bb84ecfb24463fb1d5755ac = L.popup({"maxWidth": "100%"});
 
         
-            var html_83a91fe092e4482395dc2b0679d2832f = $(`<div id="html_83a91fe092e4482395dc2b0679d2832f" style="width: 100.0%; height: 100.0%;">373 King Street W</div>`)[0];
-            popup_46b2dea6581c467b99cf036458b87f14.setContent(html_83a91fe092e4482395dc2b0679d2832f);
+            var html_2d5e1f5bd3c04bbd9c5e482dff7fa9ae = $(`<div id="html_2d5e1f5bd3c04bbd9c5e482dff7fa9ae" style="width: 100.0%; height: 100.0%;">3625 Rivergate Way</div>`)[0];
+            popup_673183923bb84ecfb24463fb1d5755ac.setContent(html_2d5e1f5bd3c04bbd9c5e482dff7fa9ae);
         
 
-        marker_9c65da4f657b45718096a5d8fb9910c9.bindPopup(popup_46b2dea6581c467b99cf036458b87f14)
+        marker_6a67917f2824400dad9cdd2491276db6.bindPopup(popup_673183923bb84ecfb24463fb1d5755ac)
         ;
 
         
     
     
-            marker_9c65da4f657b45718096a5d8fb9910c9.bindTooltip(
+            marker_6a67917f2824400dad9cdd2491276db6.bindTooltip(
                 `<div>
                      Click for more info
                  </div>`,
@@ -754,32 +774,32 @@
             );
         
     
-            var marker_053c2ede68b04067bcf9c1afbbf05e89 = L.marker(
-                [43.647923, -79.381353],
+            var marker_834bf59fd7444f6aa331c205d3f12deb = L.marker(
+                [45.4256342263095, -75.6941517354431],
                 {}
-            ).addTo(map_9755371c296d42a1919b59fcde915fbd);
+            ).addTo(map_a3498b587ad04aa5903535b3ebeaac7c);
         
     
-            var icon_5f5a61392044491080533d8ff4af1974 = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            var icon_434d6b7ecce84f7baad30276a5b684e1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
             );
-            marker_053c2ede68b04067bcf9c1afbbf05e89.setIcon(icon_5f5a61392044491080533d8ff4af1974);
+            marker_834bf59fd7444f6aa331c205d3f12deb.setIcon(icon_434d6b7ecce84f7baad30276a5b684e1);
         
     
-        var popup_12840d3fc9d049deb85e1de2be2297c1 = L.popup({"maxWidth": "100%"});
+        var popup_b4689c92cf834b758f54348b942e86bf = L.popup({"maxWidth": "100%"});
 
         
-            var html_f250f9c4839840aa86b40f5389e54c5f = $(`<div id="html_f250f9c4839840aa86b40f5389e54c5f" style="width: 100.0%; height: 100.0%;">17-66 Wellington Street W</div>`)[0];
-            popup_12840d3fc9d049deb85e1de2be2297c1.setContent(html_f250f9c4839840aa86b40f5389e54c5f);
+            var html_1c3e7ecd106a4d019d839bec095ab7df = $(`<div id="html_1c3e7ecd106a4d019d839bec095ab7df" style="width: 100.0%; height: 100.0%;">700 Sussex Dr</div>`)[0];
+            popup_b4689c92cf834b758f54348b942e86bf.setContent(html_1c3e7ecd106a4d019d839bec095ab7df);
         
 
-        marker_053c2ede68b04067bcf9c1afbbf05e89.bindPopup(popup_12840d3fc9d049deb85e1de2be2297c1)
+        marker_834bf59fd7444f6aa331c205d3f12deb.bindPopup(popup_b4689c92cf834b758f54348b942e86bf)
         ;
 
         
     
     
-            marker_053c2ede68b04067bcf9c1afbbf05e89.bindTooltip(
+            marker_834bf59fd7444f6aa331c205d3f12deb.bindTooltip(
                 `<div>
                      Click for more info
                  </div>`,
@@ -787,32 +807,32 @@
             );
         
     
-            var marker_c5453d19d5c143a3ac730c3ef06a89f2 = L.marker(
-                [43.6469499, -79.38397],
+            var marker_833d49ee02c74a1d8121fe7b74bb2ae2 = L.marker(
+                [45.40779, -75.69143],
                 {}
-            ).addTo(map_9755371c296d42a1919b59fcde915fbd);
+            ).addTo(map_a3498b587ad04aa5903535b3ebeaac7c);
         
     
-            var icon_7f05beaf3918415fb7ac07652cee8f9c = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            var icon_2d6d2e4d2b2a4584a800dd7524c84078 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
             );
-            marker_c5453d19d5c143a3ac730c3ef06a89f2.setIcon(icon_7f05beaf3918415fb7ac07652cee8f9c);
+            marker_833d49ee02c74a1d8121fe7b74bb2ae2.setIcon(icon_2d6d2e4d2b2a4584a800dd7524c84078);
         
     
-        var popup_bb8c772822be4675b4c922f6158bcedc = L.popup({"maxWidth": "100%"});
+        var popup_0fac1723bb3346ca8d42e621b6010904 = L.popup({"maxWidth": "100%"});
 
         
-            var html_e95fdece78fb479c86a91a36053214da = $(`<div id="html_e95fdece78fb479c86a91a36053214da" style="width: 100.0%; height: 100.0%;">55 University Avenue</div>`)[0];
-            popup_bb8c772822be4675b4c922f6158bcedc.setContent(html_e95fdece78fb479c86a91a36053214da);
+            var html_0516128201a44bb5b8f06bdd39b12349 = $(`<div id="html_0516128201a44bb5b8f06bdd39b12349" style="width: 100.0%; height: 100.0%;">580 Bank Street</div>`)[0];
+            popup_0fac1723bb3346ca8d42e621b6010904.setContent(html_0516128201a44bb5b8f06bdd39b12349);
         
 
-        marker_c5453d19d5c143a3ac730c3ef06a89f2.bindPopup(popup_bb8c772822be4675b4c922f6158bcedc)
+        marker_833d49ee02c74a1d8121fe7b74bb2ae2.bindPopup(popup_0fac1723bb3346ca8d42e621b6010904)
         ;
 
         
     
     
-            marker_c5453d19d5c143a3ac730c3ef06a89f2.bindTooltip(
+            marker_833d49ee02c74a1d8121fe7b74bb2ae2.bindTooltip(
                 `<div>
                      Click for more info
                  </div>`,
@@ -820,32 +840,32 @@
             );
         
     
-            var marker_5688bd62ae5049599cdcf49443970116 = L.marker(
-                [43.646122, -79.3857803],
+            var marker_5f565d2f5a85448282ac051a89736cf2 = L.marker(
+                [45.41599, -75.69552],
                 {}
-            ).addTo(map_9755371c296d42a1919b59fcde915fbd);
+            ).addTo(map_a3498b587ad04aa5903535b3ebeaac7c);
         
     
-            var icon_16fca48fe8834fa3a643f96e60113d92 = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            var icon_b32061450a904db7bce62cfe7f87f312 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
             );
-            marker_5688bd62ae5049599cdcf49443970116.setIcon(icon_16fca48fe8834fa3a643f96e60113d92);
+            marker_5f565d2f5a85448282ac051a89736cf2.setIcon(icon_b32061450a904db7bce62cfe7f87f312);
         
     
-        var popup_c27e2503c26e4e69a49643c2d009d692 = L.popup({"maxWidth": "100%"});
+        var popup_19b282cb5ced47648b41d0d997a7d32f = L.popup({"maxWidth": "100%"});
 
         
-            var html_88e9c325b9d647528f00380c1a414a9e = $(`<div id="html_88e9c325b9d647528f00380c1a414a9e" style="width: 100.0%; height: 100.0%;">200 Wellington Street W</div>`)[0];
-            popup_c27e2503c26e4e69a49643c2d009d692.setContent(html_88e9c325b9d647528f00380c1a414a9e);
+            var html_099d6ca14cd74437bdc1ac6bc9941d08 = $(`<div id="html_099d6ca14cd74437bdc1ac6bc9941d08" style="width: 100.0%; height: 100.0%;">337 Somerset Street W</div>`)[0];
+            popup_19b282cb5ced47648b41d0d997a7d32f.setContent(html_099d6ca14cd74437bdc1ac6bc9941d08);
         
 
-        marker_5688bd62ae5049599cdcf49443970116.bindPopup(popup_c27e2503c26e4e69a49643c2d009d692)
+        marker_5f565d2f5a85448282ac051a89736cf2.bindPopup(popup_19b282cb5ced47648b41d0d997a7d32f)
         ;
 
         
     
     
-            marker_5688bd62ae5049599cdcf49443970116.bindTooltip(
+            marker_5f565d2f5a85448282ac051a89736cf2.bindTooltip(
                 `<div>
                      Click for more info
                  </div>`,
@@ -853,32 +873,32 @@
             );
         
     
-            var marker_8f406787f53443c89ef6aa9747f8d3f0 = L.marker(
-                [43.645309094271, -79.389258204263],
+            var marker_34974e2a6a414215a2ad2896484315cd = L.marker(
+                [45.4282281, -75.6934303],
                 {}
-            ).addTo(map_9755371c296d42a1919b59fcde915fbd);
+            ).addTo(map_a3498b587ad04aa5903535b3ebeaac7c);
         
     
-            var icon_6c9543cf60704917b1c954ce11565fee = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            var icon_fa0f29e45c614206b86b3b826f4656a0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
             );
-            marker_8f406787f53443c89ef6aa9747f8d3f0.setIcon(icon_6c9543cf60704917b1c954ce11565fee);
+            marker_34974e2a6a414215a2ad2896484315cd.setIcon(icon_fa0f29e45c614206b86b3b826f4656a0);
         
     
-        var popup_74674a3142d741cdbcbdca0a62468f29 = L.popup({"maxWidth": "100%"});
+        var popup_9564aba002eb4e59aa01241940a6c07a = L.popup({"maxWidth": "100%"});
 
         
-            var html_d373cd23e28d4a95b5a25834e4d3707d = $(`<div id="html_d373cd23e28d4a95b5a25834e4d3707d" style="width: 100.0%; height: 100.0%;">224 Wellington Street W</div>`)[0];
-            popup_74674a3142d741cdbcbdca0a62468f29.setContent(html_d373cd23e28d4a95b5a25834e4d3707d);
+            var html_3f3308940d7f4be6b808770279cf4085 = $(`<div id="html_3f3308940d7f4be6b808770279cf4085" style="width: 100.0%; height: 100.0%;">47 York St</div>`)[0];
+            popup_9564aba002eb4e59aa01241940a6c07a.setContent(html_3f3308940d7f4be6b808770279cf4085);
         
 
-        marker_8f406787f53443c89ef6aa9747f8d3f0.bindPopup(popup_74674a3142d741cdbcbdca0a62468f29)
+        marker_34974e2a6a414215a2ad2896484315cd.bindPopup(popup_9564aba002eb4e59aa01241940a6c07a)
         ;
 
         
     
     
-            marker_8f406787f53443c89ef6aa9747f8d3f0.bindTooltip(
+            marker_34974e2a6a414215a2ad2896484315cd.bindTooltip(
                 `<div>
                      Click for more info
                  </div>`,
@@ -886,32 +906,32 @@
             );
         
     
-            var marker_dcf8730c486742b9994fceb46e60a47a = L.marker(
-                [43.6458894, -79.3857904],
+            var marker_07bdc0fe1a4e44a29c5c206f45d15bc7 = L.marker(
+                [45.420792, -75.745195],
                 {}
-            ).addTo(map_9755371c296d42a1919b59fcde915fbd);
+            ).addTo(map_a3498b587ad04aa5903535b3ebeaac7c);
         
     
-            var icon_f7d7aec82cca45908850c0816e87752a = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            var icon_39a6a0a048d04e369d5f15d79a2d29ea = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
             );
-            marker_dcf8730c486742b9994fceb46e60a47a.setIcon(icon_f7d7aec82cca45908850c0816e87752a);
+            marker_07bdc0fe1a4e44a29c5c206f45d15bc7.setIcon(icon_39a6a0a048d04e369d5f15d79a2d29ea);
         
     
-        var popup_a2ac96ba620c463b86edddb3f589faf1 = L.popup({"maxWidth": "100%"});
+        var popup_e26a04143316436ba51618450bb6fd4f = L.popup({"maxWidth": "100%"});
 
         
-            var html_6c0e5ab323a1472880728108275e17ac = $(`<div id="html_6c0e5ab323a1472880728108275e17ac" style="width: 100.0%; height: 100.0%;">155 Wellington Street W</div>`)[0];
-            popup_a2ac96ba620c463b86edddb3f589faf1.setContent(html_6c0e5ab323a1472880728108275e17ac);
+            var html_9e87d686328c43f99928c3c395226fbc = $(`<div id="html_9e87d686328c43f99928c3c395226fbc" style="width: 100.0%; height: 100.0%;">60 Rue Bégin</div>`)[0];
+            popup_e26a04143316436ba51618450bb6fd4f.setContent(html_9e87d686328c43f99928c3c395226fbc);
         
 
-        marker_dcf8730c486742b9994fceb46e60a47a.bindPopup(popup_a2ac96ba620c463b86edddb3f589faf1)
+        marker_07bdc0fe1a4e44a29c5c206f45d15bc7.bindPopup(popup_e26a04143316436ba51618450bb6fd4f)
         ;
 
         
     
     
-            marker_dcf8730c486742b9994fceb46e60a47a.bindTooltip(
+            marker_07bdc0fe1a4e44a29c5c206f45d15bc7.bindTooltip(
                 `<div>
                      Click for more info
                  </div>`,
@@ -919,32 +939,32 @@
             );
         
     
-            var marker_d132fabf6cbc42d98e0da430f29be794 = L.marker(
-                [43.64645, -79.38209],
+            var marker_3a4884f81a8d4a7daedf8264a322d60f = L.marker(
+                [45.4146720363185, -75.6878773603284],
                 {}
-            ).addTo(map_9755371c296d42a1919b59fcde915fbd);
+            ).addTo(map_a3498b587ad04aa5903535b3ebeaac7c);
         
     
-            var icon_6fb48305bf584833923daf4503c9e245 = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            var icon_ed757ab3023b422e9b344293b57659e5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
             );
-            marker_d132fabf6cbc42d98e0da430f29be794.setIcon(icon_6fb48305bf584833923daf4503c9e245);
+            marker_3a4884f81a8d4a7daedf8264a322d60f.setIcon(icon_ed757ab3023b422e9b344293b57659e5);
         
     
-        var popup_164903c40d934c9e81e4b97da2e442ea = L.popup({"maxWidth": "100%"});
+        var popup_2bc60b563a9f4fc7b79f980de4f2a4ea = L.popup({"maxWidth": "100%"});
 
         
-            var html_647cbc4e254d4df69d3db7aded311162 = $(`<div id="html_647cbc4e254d4df69d3db7aded311162" style="width: 100.0%; height: 100.0%;">95 Wellington Street West</div>`)[0];
-            popup_164903c40d934c9e81e4b97da2e442ea.setContent(html_647cbc4e254d4df69d3db7aded311162);
+            var html_a3d3111406eb4fec890dcb3a68018afc = $(`<div id="html_a3d3111406eb4fec890dcb3a68018afc" style="width: 100.0%; height: 100.0%;">380 Elgin Street</div>`)[0];
+            popup_2bc60b563a9f4fc7b79f980de4f2a4ea.setContent(html_a3d3111406eb4fec890dcb3a68018afc);
         
 
-        marker_d132fabf6cbc42d98e0da430f29be794.bindPopup(popup_164903c40d934c9e81e4b97da2e442ea)
+        marker_3a4884f81a8d4a7daedf8264a322d60f.bindPopup(popup_2bc60b563a9f4fc7b79f980de4f2a4ea)
         ;
 
         
     
     
-            marker_d132fabf6cbc42d98e0da430f29be794.bindTooltip(
+            marker_3a4884f81a8d4a7daedf8264a322d60f.bindTooltip(
                 `<div>
                      Click for more info
                  </div>`,
@@ -952,32 +972,32 @@
             );
         
     
-            var marker_fa06cc8a2e604068860881dcf81da1ac = L.marker(
-                [43.6534199, -79.42646],
+            var marker_abe749d8ca5d489a9e6863ceb8db4980 = L.marker(
+                [45.41213, -75.70486],
                 {}
-            ).addTo(map_9755371c296d42a1919b59fcde915fbd);
+            ).addTo(map_a3498b587ad04aa5903535b3ebeaac7c);
         
     
-            var icon_f6c70050f50748079b3baec1c3d84f7c = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            var icon_4983006338204b148a611185910dbbb0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
             );
-            marker_fa06cc8a2e604068860881dcf81da1ac.setIcon(icon_f6c70050f50748079b3baec1c3d84f7c);
+            marker_abe749d8ca5d489a9e6863ceb8db4980.setIcon(icon_4983006338204b148a611185910dbbb0);
         
     
-        var popup_b71d7e683f7245d2896afa56f234fb9d = L.popup({"maxWidth": "100%"});
+        var popup_45c5cca4b67d4f70857015ebc9cb0102 = L.popup({"maxWidth": "100%"});
 
         
-            var html_b92041262a7043bb913ed2d45e6e8d05 = $(`<div id="html_b92041262a7043bb913ed2d45e6e8d05" style="width: 100.0%; height: 100.0%;">941 College St</div>`)[0];
-            popup_b71d7e683f7245d2896afa56f234fb9d.setContent(html_b92041262a7043bb913ed2d45e6e8d05);
+            var html_5c233a421ddb467da1d21d2c47b2351d = $(`<div id="html_5c233a421ddb467da1d21d2c47b2351d" style="width: 100.0%; height: 100.0%;">637 Somerset Street W</div>`)[0];
+            popup_45c5cca4b67d4f70857015ebc9cb0102.setContent(html_5c233a421ddb467da1d21d2c47b2351d);
         
 
-        marker_fa06cc8a2e604068860881dcf81da1ac.bindPopup(popup_b71d7e683f7245d2896afa56f234fb9d)
+        marker_abe749d8ca5d489a9e6863ceb8db4980.bindPopup(popup_45c5cca4b67d4f70857015ebc9cb0102)
         ;
 
         
     
     
-            marker_fa06cc8a2e604068860881dcf81da1ac.bindTooltip(
+            marker_abe749d8ca5d489a9e6863ceb8db4980.bindTooltip(
                 `<div>
                      Click for more info
                  </div>`,
@@ -985,32 +1005,32 @@
             );
         
     
-            var marker_61fa404ccf8043eb826d555e9a79dc11 = L.marker(
-                [43.64721, -79.37933],
+            var marker_93e582f202f745a0ae83e31b60685f23 = L.marker(
+                [45.4143450553256, -75.6956733763218],
                 {}
-            ).addTo(map_9755371c296d42a1919b59fcde915fbd);
+            ).addTo(map_a3498b587ad04aa5903535b3ebeaac7c);
         
     
-            var icon_9e57c3c481d8478db76282dbae01289e = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            var icon_e6a307fe550b4bacb1bb3a8dbde2f6e7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
             );
-            marker_61fa404ccf8043eb826d555e9a79dc11.setIcon(icon_9e57c3c481d8478db76282dbae01289e);
+            marker_93e582f202f745a0ae83e31b60685f23.setIcon(icon_e6a307fe550b4bacb1bb3a8dbde2f6e7);
         
     
-        var popup_a529a824c6e140febc2cb9d64daca640 = L.popup({"maxWidth": "100%"});
+        var popup_07aac28a7a024781912e89f789c30079 = L.popup({"maxWidth": "100%"});
 
         
-            var html_4fc08956bdca4e739b97f6efc59bb3a4 = $(`<div id="html_4fc08956bdca4e739b97f6efc59bb3a4" style="width: 100.0%; height: 100.0%;">181 Bay Street</div>`)[0];
-            popup_a529a824c6e140febc2cb9d64daca640.setContent(html_4fc08956bdca4e739b97f6efc59bb3a4);
+            var html_0dc0e49fc04e401da4cfc6680a07bb6d = $(`<div id="html_0dc0e49fc04e401da4cfc6680a07bb6d" style="width: 100.0%; height: 100.0%;">324 Bank Street</div>`)[0];
+            popup_07aac28a7a024781912e89f789c30079.setContent(html_0dc0e49fc04e401da4cfc6680a07bb6d);
         
 
-        marker_61fa404ccf8043eb826d555e9a79dc11.bindPopup(popup_a529a824c6e140febc2cb9d64daca640)
+        marker_93e582f202f745a0ae83e31b60685f23.bindPopup(popup_07aac28a7a024781912e89f789c30079)
         ;
 
         
     
     
-            marker_61fa404ccf8043eb826d555e9a79dc11.bindTooltip(
+            marker_93e582f202f745a0ae83e31b60685f23.bindTooltip(
                 `<div>
                      Click for more info
                  </div>`,
@@ -1018,32 +1038,32 @@
             );
         
     
-            var marker_0bf15676b75f43d39af53fdf3d1001d6 = L.marker(
-                [43.66034, -79.43402],
+            var marker_d513c662c3a4442faec7bd99fa5a4313 = L.marker(
+                [45.4101419, -75.6928786],
                 {}
-            ).addTo(map_9755371c296d42a1919b59fcde915fbd);
+            ).addTo(map_a3498b587ad04aa5903535b3ebeaac7c);
         
     
-            var icon_74fdec92134b4f808b62dde58fe560de = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            var icon_0f2ef9e924e1487c88d185d53fa771f9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
             );
-            marker_0bf15676b75f43d39af53fdf3d1001d6.setIcon(icon_74fdec92134b4f808b62dde58fe560de);
+            marker_d513c662c3a4442faec7bd99fa5a4313.setIcon(icon_0f2ef9e924e1487c88d185d53fa771f9);
         
     
-        var popup_e52d9e9dc9304723a0d5537a98ba6e4a = L.popup({"maxWidth": "100%"});
+        var popup_eb76f79ab24c4fd786ac945615b005e2 = L.popup({"maxWidth": "100%"});
 
         
-            var html_4a851f569f664ef2bb908d726d6ad902 = $(`<div id="html_4a851f569f664ef2bb908d726d6ad902" style="width: 100.0%; height: 100.0%;">1090 Bloor Street West</div>`)[0];
-            popup_e52d9e9dc9304723a0d5537a98ba6e4a.setContent(html_4a851f569f664ef2bb908d726d6ad902);
+            var html_0fa91831967045d885254746ad79edb1 = $(`<div id="html_0fa91831967045d885254746ad79edb1" style="width: 100.0%; height: 100.0%;">5 Arlington Avenue</div>`)[0];
+            popup_eb76f79ab24c4fd786ac945615b005e2.setContent(html_0fa91831967045d885254746ad79edb1);
         
 
-        marker_0bf15676b75f43d39af53fdf3d1001d6.bindPopup(popup_e52d9e9dc9304723a0d5537a98ba6e4a)
+        marker_d513c662c3a4442faec7bd99fa5a4313.bindPopup(popup_eb76f79ab24c4fd786ac945615b005e2)
         ;
 
         
     
     
-            marker_0bf15676b75f43d39af53fdf3d1001d6.bindTooltip(
+            marker_d513c662c3a4442faec7bd99fa5a4313.bindTooltip(
                 `<div>
                      Click for more info
                  </div>`,
@@ -1051,32 +1071,32 @@
             );
         
     
-            var marker_e13215ee1ec34e40b4ac8e1647134d12 = L.marker(
-                [43.64388, -79.40123],
+            var marker_4a8aae511dec48dda6a7f93d11a21646 = L.marker(
+                [45.4267006, -75.6942005],
                 {}
-            ).addTo(map_9755371c296d42a1919b59fcde915fbd);
+            ).addTo(map_a3498b587ad04aa5903535b3ebeaac7c);
         
     
-            var icon_c7e8ad1e527a432d92fabb4b8888c718 = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            var icon_11402932b5f841449e9a15d657d0fe95 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
             );
-            marker_e13215ee1ec34e40b4ac8e1647134d12.setIcon(icon_c7e8ad1e527a432d92fabb4b8888c718);
+            marker_4a8aae511dec48dda6a7f93d11a21646.setIcon(icon_11402932b5f841449e9a15d657d0fe95);
         
     
-        var popup_c7818966b6814a26b493ca3e821116d8 = L.popup({"maxWidth": "100%"});
+        var popup_58204b843d78468a872004c2a86b0661 = L.popup({"maxWidth": "100%"});
 
         
-            var html_9bedc8ace8054e3a8544a06c581cacb3 = $(`<div id="html_9bedc8ace8054e3a8544a06c581cacb3" style="width: 100.0%; height: 100.0%;">621 King Street W</div>`)[0];
-            popup_c7818966b6814a26b493ca3e821116d8.setContent(html_9bedc8ace8054e3a8544a06c581cacb3);
+            var html_14f7956f3e294e52b9071edc2cffc1d7 = $(`<div id="html_14f7956f3e294e52b9071edc2cffc1d7" style="width: 100.0%; height: 100.0%;">537 Sussex Drive</div>`)[0];
+            popup_58204b843d78468a872004c2a86b0661.setContent(html_14f7956f3e294e52b9071edc2cffc1d7);
         
 
-        marker_e13215ee1ec34e40b4ac8e1647134d12.bindPopup(popup_c7818966b6814a26b493ca3e821116d8)
+        marker_4a8aae511dec48dda6a7f93d11a21646.bindPopup(popup_58204b843d78468a872004c2a86b0661)
         ;
 
         
     
     
-            marker_e13215ee1ec34e40b4ac8e1647134d12.bindTooltip(
+            marker_4a8aae511dec48dda6a7f93d11a21646.bindTooltip(
                 `<div>
                      Click for more info
                  </div>`,
@@ -1084,32 +1104,32 @@
             );
         
     
-            var marker_d5b7ac2918e541c794b897aec4ea087e = L.marker(
-                [43.6465187, -79.3787384],
+            var marker_572353aca7c4459e9afd2069c75ffa76 = L.marker(
+                [45.399080647207, -75.708733833384],
                 {}
-            ).addTo(map_9755371c296d42a1919b59fcde915fbd);
+            ).addTo(map_a3498b587ad04aa5903535b3ebeaac7c);
         
     
-            var icon_e72ca13e71124aea898e404455aa57cb = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            var icon_3f04e31bb3504a67998040cdaec35057 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
             );
-            marker_d5b7ac2918e541c794b897aec4ea087e.setIcon(icon_e72ca13e71124aea898e404455aa57cb);
+            marker_572353aca7c4459e9afd2069c75ffa76.setIcon(icon_3f04e31bb3504a67998040cdaec35057);
         
     
-        var popup_79bc7f6ef7a040c89010434ec70ecf07 = L.popup({"maxWidth": "100%"});
+        var popup_a7f934b510dc4d1ca2fdef3af48e19a7 = L.popup({"maxWidth": "100%"});
 
         
-            var html_f0f5b1975fcc46d0afdcec584f953372 = $(`<div id="html_f0f5b1975fcc46d0afdcec584f953372" style="width: 100.0%; height: 100.0%;">161 Bay Street</div>`)[0];
-            popup_79bc7f6ef7a040c89010434ec70ecf07.setContent(html_f0f5b1975fcc46d0afdcec584f953372);
+            var html_6f57cd13f06c48acb20a9e6e50d596f9 = $(`<div id="html_6f57cd13f06c48acb20a9e6e50d596f9" style="width: 100.0%; height: 100.0%;">442 Preston Street</div>`)[0];
+            popup_a7f934b510dc4d1ca2fdef3af48e19a7.setContent(html_6f57cd13f06c48acb20a9e6e50d596f9);
         
 
-        marker_d5b7ac2918e541c794b897aec4ea087e.bindPopup(popup_79bc7f6ef7a040c89010434ec70ecf07)
+        marker_572353aca7c4459e9afd2069c75ffa76.bindPopup(popup_a7f934b510dc4d1ca2fdef3af48e19a7)
         ;
 
         
     
     
-            marker_d5b7ac2918e541c794b897aec4ea087e.bindTooltip(
+            marker_572353aca7c4459e9afd2069c75ffa76.bindTooltip(
                 `<div>
                      Click for more info
                  </div>`,
@@ -1117,32 +1137,32 @@
             );
         
     
-            var marker_c3379b5b0a644005bc508b9f2c783be3 = L.marker(
-                [43.6448580313045, -79.3857468453353],
+            var marker_b8dd7b94e98d4f5888fd5128a45d2a82 = L.marker(
+                [45.4202450253436, -75.6942970025453],
                 {}
-            ).addTo(map_9755371c296d42a1919b59fcde915fbd);
+            ).addTo(map_a3498b587ad04aa5903535b3ebeaac7c);
         
     
-            var icon_00c306b213664740877a17520c8050ab = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            var icon_54f9cda11fc74b9f8bd4dec9df7b5e12 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
             );
-            marker_c3379b5b0a644005bc508b9f2c783be3.setIcon(icon_00c306b213664740877a17520c8050ab);
+            marker_b8dd7b94e98d4f5888fd5128a45d2a82.setIcon(icon_54f9cda11fc74b9f8bd4dec9df7b5e12);
         
     
-        var popup_73445897106541cca75f2c2b26c4ca2b = L.popup({"maxWidth": "100%"});
+        var popup_b03904d5d04841f3a8252c6271ca5abd = L.popup({"maxWidth": "100%"});
 
         
-            var html_11cc0b1177924f58ad6995ea4723ec4e = $(`<div id="html_11cc0b1177924f58ad6995ea4723ec4e" style="width: 100.0%; height: 100.0%;">200 Front Street W</div>`)[0];
-            popup_73445897106541cca75f2c2b26c4ca2b.setContent(html_11cc0b1177924f58ad6995ea4723ec4e);
+            var html_3df34ffb18354d5bb5d8d0b70443c340 = $(`<div id="html_3df34ffb18354d5bb5d8d0b70443c340" style="width: 100.0%; height: 100.0%;">164 Laurier Avenue W</div>`)[0];
+            popup_b03904d5d04841f3a8252c6271ca5abd.setContent(html_3df34ffb18354d5bb5d8d0b70443c340);
         
 
-        marker_c3379b5b0a644005bc508b9f2c783be3.bindPopup(popup_73445897106541cca75f2c2b26c4ca2b)
+        marker_b8dd7b94e98d4f5888fd5128a45d2a82.bindPopup(popup_b03904d5d04841f3a8252c6271ca5abd)
         ;
 
         
     
     
-            marker_c3379b5b0a644005bc508b9f2c783be3.bindTooltip(
+            marker_b8dd7b94e98d4f5888fd5128a45d2a82.bindTooltip(
                 `<div>
                      Click for more info
                  </div>`,
@@ -1150,32 +1170,32 @@
             );
         
     
-            var marker_90a6f83adb00462390b4ae53b7ff6cc8 = L.marker(
-                [43.6439389405464, -79.3893586433025],
+            var marker_2146463ea75f4335adca3c95946eee27 = L.marker(
+                [45.4318931150948, -75.6936352603961],
                 {}
-            ).addTo(map_9755371c296d42a1919b59fcde915fbd);
+            ).addTo(map_a3498b587ad04aa5903535b3ebeaac7c);
         
     
-            var icon_9aa820e4d2d94d7389dce286fb54904c = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            var icon_3672c49586334781919cd6baeeb78205 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
             );
-            marker_90a6f83adb00462390b4ae53b7ff6cc8.setIcon(icon_9aa820e4d2d94d7389dce286fb54904c);
+            marker_2146463ea75f4335adca3c95946eee27.setIcon(icon_3672c49586334781919cd6baeeb78205);
         
     
-        var popup_1db4ec45b41a495c9e93e3dadf43ae1d = L.popup({"maxWidth": "100%"});
+        var popup_a9edb5711fd54f8eb141ac2ff7769c53 = L.popup({"maxWidth": "100%"});
 
         
-            var html_52dbd753a0a04173b3ea8b4171f95b84 = $(`<div id="html_52dbd753a0a04173b3ea8b4171f95b84" style="width: 100.0%; height: 100.0%;">300 Front Street W</div>`)[0];
-            popup_1db4ec45b41a495c9e93e3dadf43ae1d.setContent(html_52dbd753a0a04173b3ea8b4171f95b84);
+            var html_f814432f39c64eb8ba027fa73310c5a5 = $(`<div id="html_f814432f39c64eb8ba027fa73310c5a5" style="width: 100.0%; height: 100.0%;">205 Dalhousie Street</div>`)[0];
+            popup_a9edb5711fd54f8eb141ac2ff7769c53.setContent(html_f814432f39c64eb8ba027fa73310c5a5);
         
 
-        marker_90a6f83adb00462390b4ae53b7ff6cc8.bindPopup(popup_1db4ec45b41a495c9e93e3dadf43ae1d)
+        marker_2146463ea75f4335adca3c95946eee27.bindPopup(popup_a9edb5711fd54f8eb141ac2ff7769c53)
         ;
 
         
     
     
-            marker_90a6f83adb00462390b4ae53b7ff6cc8.bindTooltip(
+            marker_2146463ea75f4335adca3c95946eee27.bindTooltip(
                 `<div>
                      Click for more info
                  </div>`,
@@ -1183,32 +1203,32 @@
             );
         
     
-            var marker_2cb528adea7c4b6c8eb6ca116e0533d5 = L.marker(
-                [43.6460795892176, -79.3798561021686],
+            var marker_69e74ca25c874d33bb402bc466a3f87d = L.marker(
+                [45.327171, -75.7800764],
                 {}
-            ).addTo(map_9755371c296d42a1919b59fcde915fbd);
+            ).addTo(map_a3498b587ad04aa5903535b3ebeaac7c);
         
     
-            var icon_193f79f8210c43178f7da82f742480fe = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            var icon_d220f6b34aa44c41a2f27d10015ff2b8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
             );
-            marker_2cb528adea7c4b6c8eb6ca116e0533d5.setIcon(icon_193f79f8210c43178f7da82f742480fe);
+            marker_69e74ca25c874d33bb402bc466a3f87d.setIcon(icon_d220f6b34aa44c41a2f27d10015ff2b8);
         
     
-        var popup_2f130cb2f6d743f1ace4b96d1afc9c60 = L.popup({"maxWidth": "100%"});
+        var popup_99854707db084c77b24963065a15ab1b = L.popup({"maxWidth": "100%"});
 
         
-            var html_de9c9713b75944f8b2e07ee00e8d2ae4 = $(`<div id="html_de9c9713b75944f8b2e07ee00e8d2ae4" style="width: 100.0%; height: 100.0%;">200 Bay Street</div>`)[0];
-            popup_2f130cb2f6d743f1ace4b96d1afc9c60.setContent(html_de9c9713b75944f8b2e07ee00e8d2ae4);
+            var html_99f5afad3b2d43899b1ed2f469c527c5 = $(`<div id="html_99f5afad3b2d43899b1ed2f469c527c5" style="width: 100.0%; height: 100.0%;">196 Greenbank Road</div>`)[0];
+            popup_99854707db084c77b24963065a15ab1b.setContent(html_99f5afad3b2d43899b1ed2f469c527c5);
         
 
-        marker_2cb528adea7c4b6c8eb6ca116e0533d5.bindPopup(popup_2f130cb2f6d743f1ace4b96d1afc9c60)
+        marker_69e74ca25c874d33bb402bc466a3f87d.bindPopup(popup_99854707db084c77b24963065a15ab1b)
         ;
 
         
     
     
-            marker_2cb528adea7c4b6c8eb6ca116e0533d5.bindTooltip(
+            marker_69e74ca25c874d33bb402bc466a3f87d.bindTooltip(
                 `<div>
                      Click for more info
                  </div>`,
@@ -1216,32 +1236,32 @@
             );
         
     
-            var marker_010f3b8cc7be441e94482ae6fa1deddd = L.marker(
-                [43.6487198, -79.3725128],
+            var marker_7839a42722d64d75b006eb660232e431 = L.marker(
+                [45.4025123, -75.6879643],
                 {}
-            ).addTo(map_9755371c296d42a1919b59fcde915fbd);
+            ).addTo(map_a3498b587ad04aa5903535b3ebeaac7c);
         
     
-            var icon_74fcb1282abf4e91b979e5a952c618e0 = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            var icon_4b6ebe729b634e5091e089871badaeb7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
             );
-            marker_010f3b8cc7be441e94482ae6fa1deddd.setIcon(icon_74fcb1282abf4e91b979e5a952c618e0);
+            marker_7839a42722d64d75b006eb660232e431.setIcon(icon_4b6ebe729b634e5091e089871badaeb7);
         
     
-        var popup_64fb203b706d4ee0a411d342cdd4f6ab = L.popup({"maxWidth": "100%"});
+        var popup_c91797605ebe4f6a9f94e1d6401e3369 = L.popup({"maxWidth": "100%"});
 
         
-            var html_31453372e3e04bdba4e958cf90679c5c = $(`<div id="html_31453372e3e04bdba4e958cf90679c5c" style="width: 100.0%; height: 100.0%;">81 Front Street E</div>`)[0];
-            popup_64fb203b706d4ee0a411d342cdd4f6ab.setContent(html_31453372e3e04bdba4e958cf90679c5c);
+            var html_ceb3f45fb0194fd4a9e7fbcf5c5444e9 = $(`<div id="html_ceb3f45fb0194fd4a9e7fbcf5c5444e9" style="width: 100.0%; height: 100.0%;">817 Bank Street</div>`)[0];
+            popup_c91797605ebe4f6a9f94e1d6401e3369.setContent(html_ceb3f45fb0194fd4a9e7fbcf5c5444e9);
         
 
-        marker_010f3b8cc7be441e94482ae6fa1deddd.bindPopup(popup_64fb203b706d4ee0a411d342cdd4f6ab)
+        marker_7839a42722d64d75b006eb660232e431.bindPopup(popup_c91797605ebe4f6a9f94e1d6401e3369)
         ;
 
         
     
     
-            marker_010f3b8cc7be441e94482ae6fa1deddd.bindTooltip(
+            marker_7839a42722d64d75b006eb660232e431.bindTooltip(
                 `<div>
                      Click for more info
                  </div>`,
@@ -1249,32 +1269,32 @@
             );
         
     
-            var marker_be4585da253b4a3aa8a65b148ec10636 = L.marker(
-                [43.6449092206432, -79.3834550735419],
+            var marker_33124ce532ea4dc8869c2e2e692bf60e = L.marker(
+                [45.4274174, -75.6944421],
                 {}
-            ).addTo(map_9755371c296d42a1919b59fcde915fbd);
+            ).addTo(map_a3498b587ad04aa5903535b3ebeaac7c);
         
     
-            var icon_4667b2cb148b4a32b475043e4f85949e = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            var icon_271d3d7fcd0f4d2e9846763d773d83bc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
             );
-            marker_be4585da253b4a3aa8a65b148ec10636.setIcon(icon_4667b2cb148b4a32b475043e4f85949e);
+            marker_33124ce532ea4dc8869c2e2e692bf60e.setIcon(icon_271d3d7fcd0f4d2e9846763d773d83bc);
         
     
-        var popup_23a1154569144f2f84abc9435898485a = L.popup({"maxWidth": "100%"});
+        var popup_e7e5b1c44f5147aea0571dcbe1bd1428 = L.popup({"maxWidth": "100%"});
 
         
-            var html_c8180983821a46ef9edcd195b5ca6afb = $(`<div id="html_c8180983821a46ef9edcd195b5ca6afb" style="width: 100.0%; height: 100.0%;">123 Front Street W</div>`)[0];
-            popup_23a1154569144f2f84abc9435898485a.setContent(html_c8180983821a46ef9edcd195b5ca6afb);
+            var html_74f20a46c4b84fa0a39c28d2dc798e70 = $(`<div id="html_74f20a46c4b84fa0a39c28d2dc798e70" style="width: 100.0%; height: 100.0%;">10 York St</div>`)[0];
+            popup_e7e5b1c44f5147aea0571dcbe1bd1428.setContent(html_74f20a46c4b84fa0a39c28d2dc798e70);
         
 
-        marker_be4585da253b4a3aa8a65b148ec10636.bindPopup(popup_23a1154569144f2f84abc9435898485a)
+        marker_33124ce532ea4dc8869c2e2e692bf60e.bindPopup(popup_e7e5b1c44f5147aea0571dcbe1bd1428)
         ;
 
         
     
     
-            marker_be4585da253b4a3aa8a65b148ec10636.bindTooltip(
+            marker_33124ce532ea4dc8869c2e2e692bf60e.bindTooltip(
                 `<div>
                      Click for more info
                  </div>`,
@@ -1282,32 +1302,32 @@
             );
         
     
-            var marker_e652d504d3714d8587e97195daa54b23 = L.marker(
-                [43.65132, -79.36796],
+            var marker_1c0b7b3656804787b4ac7fdbc78ac678 = L.marker(
+                [45.4125099, -75.6935806],
                 {}
-            ).addTo(map_9755371c296d42a1919b59fcde915fbd);
+            ).addTo(map_a3498b587ad04aa5903535b3ebeaac7c);
         
     
-            var icon_4e74cb7465c749ce8f1eafe7a7342147 = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            var icon_75fa4991bfb44aa98c05a6da0f10df75 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
             );
-            marker_e652d504d3714d8587e97195daa54b23.setIcon(icon_4e74cb7465c749ce8f1eafe7a7342147);
+            marker_1c0b7b3656804787b4ac7fdbc78ac678.setIcon(icon_75fa4991bfb44aa98c05a6da0f10df75);
         
     
-        var popup_a853e696427a4e2b9a686895f6f65412 = L.popup({"maxWidth": "100%"});
+        var popup_6f8f033a0da94166961458b7345d4ca5 = L.popup({"maxWidth": "100%"});
 
         
-            var html_a4b0bd2deab0442793359114691c5ab2 = $(`<div id="html_a4b0bd2deab0442793359114691c5ab2" style="width: 100.0%; height: 100.0%;">A1-251 King Street E</div>`)[0];
-            popup_a853e696427a4e2b9a686895f6f65412.setContent(html_a4b0bd2deab0442793359114691c5ab2);
+            var html_e057bb948e07407fa7933f73d16273d5 = $(`<div id="html_e057bb948e07407fa7933f73d16273d5" style="width: 100.0%; height: 100.0%;">425 Bank Street</div>`)[0];
+            popup_6f8f033a0da94166961458b7345d4ca5.setContent(html_e057bb948e07407fa7933f73d16273d5);
         
 
-        marker_e652d504d3714d8587e97195daa54b23.bindPopup(popup_a853e696427a4e2b9a686895f6f65412)
+        marker_1c0b7b3656804787b4ac7fdbc78ac678.bindPopup(popup_6f8f033a0da94166961458b7345d4ca5)
         ;
 
         
     
     
-            marker_e652d504d3714d8587e97195daa54b23.bindTooltip(
+            marker_1c0b7b3656804787b4ac7fdbc78ac678.bindTooltip(
                 `<div>
                      Click for more info
                  </div>`,
@@ -1315,32 +1335,32 @@
             );
         
     
-            var marker_12782cb580a54524aa7bf5eeda581ca5 = L.marker(
-                [43.70566, -79.39775],
+            var marker_ffc9b37a910f4238b4f0c85c95c100b2 = L.marker(
+                [45.428546, -75.693712],
                 {}
-            ).addTo(map_9755371c296d42a1919b59fcde915fbd);
+            ).addTo(map_a3498b587ad04aa5903535b3ebeaac7c);
         
     
-            var icon_b08182ae4227447b83e11c9df5ce7eee = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            var icon_f9db74ed405a43a49bda93fbefc132fa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
             );
-            marker_12782cb580a54524aa7bf5eeda581ca5.setIcon(icon_b08182ae4227447b83e11c9df5ce7eee);
+            marker_ffc9b37a910f4238b4f0c85c95c100b2.setIcon(icon_f9db74ed405a43a49bda93fbefc132fa);
         
     
-        var popup_89b90fa980484b26a2a01ded06bec7d5 = L.popup({"maxWidth": "100%"});
+        var popup_7a312451cbe24f23bde7bf64034439f2 = L.popup({"maxWidth": "100%"});
 
         
-            var html_95e0c18c36ee4af7ba4f91637d22e069 = $(`<div id="html_95e0c18c36ee4af7ba4f91637d22e069" style="width: 100.0%; height: 100.0%;">2193 Yonge St</div>`)[0];
-            popup_89b90fa980484b26a2a01ded06bec7d5.setContent(html_95e0c18c36ee4af7ba4f91637d22e069);
+            var html_adb82d7e2ceb40e58f2bce8cd3096e58 = $(`<div id="html_adb82d7e2ceb40e58f2bce8cd3096e58" style="width: 100.0%; height: 100.0%;">6 Byward Market Square</div>`)[0];
+            popup_7a312451cbe24f23bde7bf64034439f2.setContent(html_adb82d7e2ceb40e58f2bce8cd3096e58);
         
 
-        marker_12782cb580a54524aa7bf5eeda581ca5.bindPopup(popup_89b90fa980484b26a2a01ded06bec7d5)
+        marker_ffc9b37a910f4238b4f0c85c95c100b2.bindPopup(popup_7a312451cbe24f23bde7bf64034439f2)
         ;
 
         
     
     
-            marker_12782cb580a54524aa7bf5eeda581ca5.bindTooltip(
+            marker_ffc9b37a910f4238b4f0c85c95c100b2.bindTooltip(
                 `<div>
                      Click for more info
                  </div>`,
@@ -1348,32 +1368,32 @@
             );
         
     
-            var marker_74a32ca3386c41a38d5a3a586b580a65 = L.marker(
-                [43.644679, -79.3818],
+            var marker_4282fc86b38f46d9924f8c3e104f9ba0 = L.marker(
+                [45.41084, -75.70616],
                 {}
-            ).addTo(map_9755371c296d42a1919b59fcde915fbd);
+            ).addTo(map_a3498b587ad04aa5903535b3ebeaac7c);
         
     
-            var icon_009ed9dd67c4456aad6d3708e6985ec0 = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            var icon_1667b20d4b5d482ab82f20e3cba3d4b1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
             );
-            marker_74a32ca3386c41a38d5a3a586b580a65.setIcon(icon_009ed9dd67c4456aad6d3708e6985ec0);
+            marker_4282fc86b38f46d9924f8c3e104f9ba0.setIcon(icon_1667b20d4b5d482ab82f20e3cba3d4b1);
         
     
-        var popup_af2ac735499b4c91a6016db11aa5ab0d = L.popup({"maxWidth": "100%"});
+        var popup_bd66e15738164b0eb9d87625d21a3fd6 = L.popup({"maxWidth": "100%"});
 
         
-            var html_79c29d9444db4853accbc6d2caa37b36 = $(`<div id="html_79c29d9444db4853accbc6d2caa37b36" style="width: 100.0%; height: 100.0%;">65 Front Street W</div>`)[0];
-            popup_af2ac735499b4c91a6016db11aa5ab0d.setContent(html_79c29d9444db4853accbc6d2caa37b36);
+            var html_624f4385a00a4e1fb0de852ad5c5e3f3 = $(`<div id="html_624f4385a00a4e1fb0de852ad5c5e3f3" style="width: 100.0%; height: 100.0%;">690B Somerset Street W</div>`)[0];
+            popup_bd66e15738164b0eb9d87625d21a3fd6.setContent(html_624f4385a00a4e1fb0de852ad5c5e3f3);
         
 
-        marker_74a32ca3386c41a38d5a3a586b580a65.bindPopup(popup_af2ac735499b4c91a6016db11aa5ab0d)
+        marker_4282fc86b38f46d9924f8c3e104f9ba0.bindPopup(popup_bd66e15738164b0eb9d87625d21a3fd6)
         ;
 
         
     
     
-            marker_74a32ca3386c41a38d5a3a586b580a65.bindTooltip(
+            marker_4282fc86b38f46d9924f8c3e104f9ba0.bindTooltip(
                 `<div>
                      Click for more info
                  </div>`,
@@ -1381,32 +1401,32 @@
             );
         
     
-            var marker_0007c8c4637d43ce9a8f105aef42c210 = L.marker(
-                [43.70416, -79.41189],
+            var marker_2eef827cd69741869c9357088432116f = L.marker(
+                [45.399463148809, -75.709054159625],
                 {}
-            ).addTo(map_9755371c296d42a1919b59fcde915fbd);
+            ).addTo(map_a3498b587ad04aa5903535b3ebeaac7c);
         
     
-            var icon_5d5e5f14e8b84c528c3a70b838ea5320 = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            var icon_7bb4c64fc6af41478cdb7f4ebbbcc0b5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
             );
-            marker_0007c8c4637d43ce9a8f105aef42c210.setIcon(icon_5d5e5f14e8b84c528c3a70b838ea5320);
+            marker_2eef827cd69741869c9357088432116f.setIcon(icon_7bb4c64fc6af41478cdb7f4ebbbcc0b5);
         
     
-        var popup_050d9e082d2540d192b27dcd402c13c0 = L.popup({"maxWidth": "100%"});
+        var popup_e361644b77e141718775aa4143ad1db6 = L.popup({"maxWidth": "100%"});
 
         
-            var html_acae0c0f116d4d3a91dd7335fe25b2ae = $(`<div id="html_acae0c0f116d4d3a91dd7335fe25b2ae" style="width: 100.0%; height: 100.0%;">444 Eglinton Ave W</div>`)[0];
-            popup_050d9e082d2540d192b27dcd402c13c0.setContent(html_acae0c0f116d4d3a91dd7335fe25b2ae);
+            var html_a8f151a2a40f4c8db2637a75cb256b0a = $(`<div id="html_a8f151a2a40f4c8db2637a75cb256b0a" style="width: 100.0%; height: 100.0%;">434 1/2 Preston Street</div>`)[0];
+            popup_e361644b77e141718775aa4143ad1db6.setContent(html_a8f151a2a40f4c8db2637a75cb256b0a);
         
 
-        marker_0007c8c4637d43ce9a8f105aef42c210.bindPopup(popup_050d9e082d2540d192b27dcd402c13c0)
+        marker_2eef827cd69741869c9357088432116f.bindPopup(popup_e361644b77e141718775aa4143ad1db6)
         ;
 
         
     
     
-            marker_0007c8c4637d43ce9a8f105aef42c210.bindTooltip(
+            marker_2eef827cd69741869c9357088432116f.bindTooltip(
                 `<div>
                      Click for more info
                  </div>`,
@@ -1414,32 +1434,32 @@
             );
         
     
-            var marker_70e216626e6a4496b21dfbea3d5c8234 = L.marker(
-                [43.7059288, -79.3894424],
+            var marker_5957a707566c471e93e28d8aa7b34c7d = L.marker(
+                [45.4287909819952, -75.6939682959368],
                 {}
-            ).addTo(map_9755371c296d42a1919b59fcde915fbd);
+            ).addTo(map_a3498b587ad04aa5903535b3ebeaac7c);
         
     
-            var icon_254045e63bf04a4eafb458da7d45f0ce = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            var icon_aeeb3d7eb6a04578922f47da27d668fe = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
             );
-            marker_70e216626e6a4496b21dfbea3d5c8234.setIcon(icon_254045e63bf04a4eafb458da7d45f0ce);
+            marker_5957a707566c471e93e28d8aa7b34c7d.setIcon(icon_aeeb3d7eb6a04578922f47da27d668fe);
         
     
-        var popup_be3dc583d994462f80c1bd0f3ef52c1c = L.popup({"maxWidth": "100%"});
+        var popup_de141d2ca3554954b9cb746ed0b1523a = L.popup({"maxWidth": "100%"});
 
         
-            var html_205509ca66b544e388a4a819fcdf5196 = $(`<div id="html_205509ca66b544e388a4a819fcdf5196" style="width: 100.0%; height: 100.0%;">694 Mount Pleasant</div>`)[0];
-            popup_be3dc583d994462f80c1bd0f3ef52c1c.setContent(html_205509ca66b544e388a4a819fcdf5196);
+            var html_712d772f4e374c61aa86865e35cbd964 = $(`<div id="html_712d772f4e374c61aa86865e35cbd964" style="width: 100.0%; height: 100.0%;">45 Clarence Street</div>`)[0];
+            popup_de141d2ca3554954b9cb746ed0b1523a.setContent(html_712d772f4e374c61aa86865e35cbd964);
         
 
-        marker_70e216626e6a4496b21dfbea3d5c8234.bindPopup(popup_be3dc583d994462f80c1bd0f3ef52c1c)
+        marker_5957a707566c471e93e28d8aa7b34c7d.bindPopup(popup_de141d2ca3554954b9cb746ed0b1523a)
         ;
 
         
     
     
-            marker_70e216626e6a4496b21dfbea3d5c8234.bindTooltip(
+            marker_5957a707566c471e93e28d8aa7b34c7d.bindTooltip(
                 `<div>
                      Click for more info
                  </div>`,
@@ -1447,32 +1467,32 @@
             );
         
     
-            var marker_f60eabe1c0ae487f8e384fcc7602d175 = L.marker(
-                [43.70675, -79.39704],
+            var marker_68a4edcde55743bd8f956a0c6016743a = L.marker(
+                [45.41592, -75.6957],
                 {}
-            ).addTo(map_9755371c296d42a1919b59fcde915fbd);
+            ).addTo(map_a3498b587ad04aa5903535b3ebeaac7c);
         
     
-            var icon_199f36fde3e3433aaf7a26d15b1334fd = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            var icon_346aeb33d22f4d018d629bf01b447d2a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
             );
-            marker_f60eabe1c0ae487f8e384fcc7602d175.setIcon(icon_199f36fde3e3433aaf7a26d15b1334fd);
+            marker_68a4edcde55743bd8f956a0c6016743a.setIcon(icon_346aeb33d22f4d018d629bf01b447d2a);
         
     
-        var popup_d0510e8e2fb749258d5387e9e7274a5d = L.popup({"maxWidth": "100%"});
+        var popup_a5cd99afeb7048229b490232b9102358 = L.popup({"maxWidth": "100%"});
 
         
-            var html_f6148079f2eb4ed8a611ce5894bf9de0 = $(`<div id="html_f6148079f2eb4ed8a611ce5894bf9de0" style="width: 100.0%; height: 100.0%;">39 Eglinton Avenue E</div>`)[0];
-            popup_d0510e8e2fb749258d5387e9e7274a5d.setContent(html_f6148079f2eb4ed8a611ce5894bf9de0);
+            var html_4776627224994f05b2ad5516a342d8bb = $(`<div id="html_4776627224994f05b2ad5516a342d8bb" style="width: 100.0%; height: 100.0%;">343 Somerset Street W</div>`)[0];
+            popup_a5cd99afeb7048229b490232b9102358.setContent(html_4776627224994f05b2ad5516a342d8bb);
         
 
-        marker_f60eabe1c0ae487f8e384fcc7602d175.bindPopup(popup_d0510e8e2fb749258d5387e9e7274a5d)
+        marker_68a4edcde55743bd8f956a0c6016743a.bindPopup(popup_a5cd99afeb7048229b490232b9102358)
         ;
 
         
     
     
-            marker_f60eabe1c0ae487f8e384fcc7602d175.bindTooltip(
+            marker_68a4edcde55743bd8f956a0c6016743a.bindTooltip(
                 `<div>
                      Click for more info
                  </div>`,
@@ -1480,32 +1500,32 @@
             );
         
     
-            var marker_b2e6948aca8f48d6bfd9f7596deb3616 = L.marker(
-                [43.64286, -79.38336],
+            var marker_eb0e65e8e96844ca9ee67a4eba4e4ab7 = L.marker(
+                [45.3387997, -75.6821225],
                 {}
-            ).addTo(map_9755371c296d42a1919b59fcde915fbd);
+            ).addTo(map_a3498b587ad04aa5903535b3ebeaac7c);
         
     
-            var icon_79a35a1e54984769b77824393a64b3e2 = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            var icon_29f88904871c483b90780a2020838cda = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
             );
-            marker_b2e6948aca8f48d6bfd9f7596deb3616.setIcon(icon_79a35a1e54984769b77824393a64b3e2);
+            marker_eb0e65e8e96844ca9ee67a4eba4e4ab7.setIcon(icon_29f88904871c483b90780a2020838cda);
         
     
-        var popup_ad0ab8e5093e4abab8804a0146369169 = L.popup({"maxWidth": "100%"});
+        var popup_565631dfa14f43bf9cf88bf962521aff = L.popup({"maxWidth": "100%"});
 
         
-            var html_eef5589924d1401ea2599aea3e55d137 = $(`<div id="html_eef5589924d1401ea2599aea3e55d137" style="width: 100.0%; height: 100.0%;">120 Bremner Boulevard</div>`)[0];
-            popup_ad0ab8e5093e4abab8804a0146369169.setContent(html_eef5589924d1401ea2599aea3e55d137);
+            var html_6cd5f0282294474796c7ed4486a28bf3 = $(`<div id="html_6cd5f0282294474796c7ed4486a28bf3" style="width: 100.0%; height: 100.0%;">376 Hunt Club Road</div>`)[0];
+            popup_565631dfa14f43bf9cf88bf962521aff.setContent(html_6cd5f0282294474796c7ed4486a28bf3);
         
 
-        marker_b2e6948aca8f48d6bfd9f7596deb3616.bindPopup(popup_ad0ab8e5093e4abab8804a0146369169)
+        marker_eb0e65e8e96844ca9ee67a4eba4e4ab7.bindPopup(popup_565631dfa14f43bf9cf88bf962521aff)
         ;
 
         
     
     
-            marker_b2e6948aca8f48d6bfd9f7596deb3616.bindTooltip(
+            marker_eb0e65e8e96844ca9ee67a4eba4e4ab7.bindTooltip(
                 `<div>
                      Click for more info
                  </div>`,
@@ -1513,32 +1533,32 @@
             );
         
     
-            var marker_172a5a823ed4443192c7fd8d623b7d74 = L.marker(
-                [43.70716, -79.39904],
+            var marker_17a3be18008e4c84a0f65e5a9446a3bc = L.marker(
+                [45.4287, -75.69455],
                 {}
-            ).addTo(map_9755371c296d42a1919b59fcde915fbd);
+            ).addTo(map_a3498b587ad04aa5903535b3ebeaac7c);
         
     
-            var icon_81b5666ea56148909618c88cd17123fe = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            var icon_c8bf7abeb88440ddaecd662ede3a677d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
             );
-            marker_172a5a823ed4443192c7fd8d623b7d74.setIcon(icon_81b5666ea56148909618c88cd17123fe);
+            marker_17a3be18008e4c84a0f65e5a9446a3bc.setIcon(icon_c8bf7abeb88440ddaecd662ede3a677d);
         
     
-        var popup_6599d9a81d3143c8ab3a296c49816225 = L.popup({"maxWidth": "100%"});
+        var popup_64433a1ad5a74cbaae1e6e49c9583d48 = L.popup({"maxWidth": "100%"});
 
         
-            var html_02ee8980e739492e9d37c2205dfd6eb8 = $(`<div id="html_02ee8980e739492e9d37c2205dfd6eb8" style="width: 100.0%; height: 100.0%;">Indigo</div>`)[0];
-            popup_6599d9a81d3143c8ab3a296c49816225.setContent(html_02ee8980e739492e9d37c2205dfd6eb8);
+            var html_8c9c965f6404449ba7ac8e2f90750d71 = $(`<div id="html_8c9c965f6404449ba7ac8e2f90750d71" style="width: 100.0%; height: 100.0%;">39 Clarence Street</div>`)[0];
+            popup_64433a1ad5a74cbaae1e6e49c9583d48.setContent(html_8c9c965f6404449ba7ac8e2f90750d71);
         
 
-        marker_172a5a823ed4443192c7fd8d623b7d74.bindPopup(popup_6599d9a81d3143c8ab3a296c49816225)
+        marker_17a3be18008e4c84a0f65e5a9446a3bc.bindPopup(popup_64433a1ad5a74cbaae1e6e49c9583d48)
         ;
 
         
     
     
-            marker_172a5a823ed4443192c7fd8d623b7d74.bindTooltip(
+            marker_17a3be18008e4c84a0f65e5a9446a3bc.bindTooltip(
                 `<div>
                      Click for more info
                  </div>`,
@@ -1546,32 +1566,32 @@
             );
         
     
-            var marker_e40ebfb9dbf3413f81e055b63bf5e5bc = L.marker(
-                [43.643054943145, -79.381294259834],
+            var marker_1fa526ff13c74753b77bdbbec678a0b4 = L.marker(
+                [45.4254955, -75.6934855],
                 {}
-            ).addTo(map_9755371c296d42a1919b59fcde915fbd);
+            ).addTo(map_a3498b587ad04aa5903535b3ebeaac7c);
         
     
-            var icon_bf673ec02d2b42488c6c47dfe5eceb5b = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            var icon_920aae8863c44e648817010e8c211f51 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
             );
-            marker_e40ebfb9dbf3413f81e055b63bf5e5bc.setIcon(icon_bf673ec02d2b42488c6c47dfe5eceb5b);
+            marker_1fa526ff13c74753b77bdbbec678a0b4.setIcon(icon_920aae8863c44e648817010e8c211f51);
         
     
-        var popup_53bca59298c549db91f6d0f5b02625f1 = L.popup({"maxWidth": "100%"});
+        var popup_b18de2e630a345bba467851386679b91 = L.popup({"maxWidth": "100%"});
 
         
-            var html_ed743594c6b341febf4cb505963eb644 = $(`<div id="html_ed743594c6b341febf4cb505963eb644" style="width: 100.0%; height: 100.0%;">25 York Street</div>`)[0];
-            popup_53bca59298c549db91f6d0f5b02625f1.setContent(html_ed743594c6b341febf4cb505963eb644);
+            var html_12f899052f8842548fb9add24aacc105 = $(`<div id="html_12f899052f8842548fb9add24aacc105" style="width: 100.0%; height: 100.0%;">700 Sussex Drive</div>`)[0];
+            popup_b18de2e630a345bba467851386679b91.setContent(html_12f899052f8842548fb9add24aacc105);
         
 
-        marker_e40ebfb9dbf3413f81e055b63bf5e5bc.bindPopup(popup_53bca59298c549db91f6d0f5b02625f1)
+        marker_1fa526ff13c74753b77bdbbec678a0b4.bindPopup(popup_b18de2e630a345bba467851386679b91)
         ;
 
         
     
     
-            marker_e40ebfb9dbf3413f81e055b63bf5e5bc.bindTooltip(
+            marker_1fa526ff13c74753b77bdbbec678a0b4.bindTooltip(
                 `<div>
                      Click for more info
                  </div>`,
@@ -1579,32 +1599,32 @@
             );
         
     
-            var marker_1316d44a138444e8bcf11766095fa081 = L.marker(
-                [43.6555385130783, -79.4358787724749],
+            var marker_d4d68b8d34e94e318d1f783d462d593f = L.marker(
+                [45.4320605429586, -75.6940825204347],
                 {}
-            ).addTo(map_9755371c296d42a1919b59fcde915fbd);
+            ).addTo(map_a3498b587ad04aa5903535b3ebeaac7c);
         
     
-            var icon_4693fa33513941758608e3d69b425291 = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            var icon_f4fa142312904a709f781a559a86a021 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
             );
-            marker_1316d44a138444e8bcf11766095fa081.setIcon(icon_4693fa33513941758608e3d69b425291);
+            marker_d4d68b8d34e94e318d1f783d462d593f.setIcon(icon_f4fa142312904a709f781a559a86a021);
         
     
-        var popup_a6d14115d0e249068696778b5987df08 = L.popup({"maxWidth": "100%"});
+        var popup_12e0fa3a54084510adc486ab72b15e57 = L.popup({"maxWidth": "100%"});
 
         
-            var html_3a294f8201db429ca3dbcdc0e9bbd682 = $(`<div id="html_3a294f8201db429ca3dbcdc0e9bbd682" style="width: 100.0%; height: 100.0%;">900 Dufferin Street</div>`)[0];
-            popup_a6d14115d0e249068696778b5987df08.setContent(html_3a294f8201db429ca3dbcdc0e9bbd682);
+            var html_1d88a6223637432bb89f04eb9ef1690e = $(`<div id="html_1d88a6223637432bb89f04eb9ef1690e" style="width: 100.0%; height: 100.0%;">190 Dalhousie Street</div>`)[0];
+            popup_12e0fa3a54084510adc486ab72b15e57.setContent(html_1d88a6223637432bb89f04eb9ef1690e);
         
 
-        marker_1316d44a138444e8bcf11766095fa081.bindPopup(popup_a6d14115d0e249068696778b5987df08)
+        marker_d4d68b8d34e94e318d1f783d462d593f.bindPopup(popup_12e0fa3a54084510adc486ab72b15e57)
         ;
 
         
     
     
-            marker_1316d44a138444e8bcf11766095fa081.bindTooltip(
+            marker_d4d68b8d34e94e318d1f783d462d593f.bindTooltip(
                 `<div>
                      Click for more info
                  </div>`,
@@ -1612,32 +1632,32 @@
             );
         
     
-            var marker_024dcf943e30443694cd97fa27c080ec = L.marker(
-                [43.6442764051531, -79.4190879675132],
+            var marker_e4f1490307674cb3b467d0160c962525 = L.marker(
+                [45.4426303, -75.642048],
                 {}
-            ).addTo(map_9755371c296d42a1919b59fcde915fbd);
+            ).addTo(map_a3498b587ad04aa5903535b3ebeaac7c);
         
     
-            var icon_25a91ae400184643995f3f05cfeadcf6 = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            var icon_0aba345b29be4928b13853acd1d31bb4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
             );
-            marker_024dcf943e30443694cd97fa27c080ec.setIcon(icon_25a91ae400184643995f3f05cfeadcf6);
+            marker_e4f1490307674cb3b467d0160c962525.setIcon(icon_0aba345b29be4928b13853acd1d31bb4);
         
     
-        var popup_0c3a0e3078f541368c48b25364948f18 = L.popup({"maxWidth": "100%"});
+        var popup_16d85f721068492fba95a7e4e07d6fbd = L.popup({"maxWidth": "100%"});
 
         
-            var html_4a34d0f3a3bc413fbcf5c10026648c8d = $(`<div id="html_4a34d0f3a3bc413fbcf5c10026648c8d" style="width: 100.0%; height: 100.0%;">2 Ossington Avenue</div>`)[0];
-            popup_0c3a0e3078f541368c48b25364948f18.setContent(html_4a34d0f3a3bc413fbcf5c10026648c8d);
+            var html_6bcbc2b036d04ea7982730df9a0f7dff = $(`<div id="html_6bcbc2b036d04ea7982730df9a0f7dff" style="width: 100.0%; height: 100.0%;">622 Montreal Road</div>`)[0];
+            popup_16d85f721068492fba95a7e4e07d6fbd.setContent(html_6bcbc2b036d04ea7982730df9a0f7dff);
         
 
-        marker_024dcf943e30443694cd97fa27c080ec.bindPopup(popup_0c3a0e3078f541368c48b25364948f18)
+        marker_e4f1490307674cb3b467d0160c962525.bindPopup(popup_16d85f721068492fba95a7e4e07d6fbd)
         ;
 
         
     
     
-            marker_024dcf943e30443694cd97fa27c080ec.bindTooltip(
+            marker_e4f1490307674cb3b467d0160c962525.bindTooltip(
                 `<div>
                      Click for more info
                  </div>`,
@@ -1645,32 +1665,32 @@
             );
         
     
-            var marker_f77f06625ada4d858c4d385de1ca2a10 = L.marker(
-                [43.6403364445645, -79.3928522281311],
+            var marker_41363154a9204911b198c2fdc397ce6f = L.marker(
+                [45.426593, -75.691347],
                 {}
-            ).addTo(map_9755371c296d42a1919b59fcde915fbd);
+            ).addTo(map_a3498b587ad04aa5903535b3ebeaac7c);
         
     
-            var icon_7ec3fa7a04954bb4bbee0372864f6c31 = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            var icon_39a48f1f9f1f44d386497500274157bf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
             );
-            marker_f77f06625ada4d858c4d385de1ca2a10.setIcon(icon_7ec3fa7a04954bb4bbee0372864f6c31);
+            marker_41363154a9204911b198c2fdc397ce6f.setIcon(icon_39a48f1f9f1f44d386497500274157bf);
         
     
-        var popup_23ad9b24608f46f7a677a7861079c156 = L.popup({"maxWidth": "100%"});
+        var popup_b2baad35c45043c38008305c0d92c5da = L.popup({"maxWidth": "100%"});
 
         
-            var html_a9f142899a464ab7b5d4588d15828aaf = $(`<div id="html_a9f142899a464ab7b5d4588d15828aaf" style="width: 100.0%; height: 100.0%;">446 Spadina Road</div>`)[0];
-            popup_23ad9b24608f46f7a677a7861079c156.setContent(html_a9f142899a464ab7b5d4588d15828aaf);
+            var html_026be79842f44a80926f99b8638f9e89 = $(`<div id="html_026be79842f44a80926f99b8638f9e89" style="width: 100.0%; height: 100.0%;">115 Rideau Street</div>`)[0];
+            popup_b2baad35c45043c38008305c0d92c5da.setContent(html_026be79842f44a80926f99b8638f9e89);
         
 
-        marker_f77f06625ada4d858c4d385de1ca2a10.bindPopup(popup_23ad9b24608f46f7a677a7861079c156)
+        marker_41363154a9204911b198c2fdc397ce6f.bindPopup(popup_b2baad35c45043c38008305c0d92c5da)
         ;
 
         
     
     
-            marker_f77f06625ada4d858c4d385de1ca2a10.bindTooltip(
+            marker_41363154a9204911b198c2fdc397ce6f.bindTooltip(
                 `<div>
                      Click for more info
                  </div>`,
@@ -1678,32 +1698,32 @@
             );
         
     
-            var marker_4ac98c92f1b143f7a37b38f5429111d0 = L.marker(
-                [43.6416285253079, -79.3834711746466],
+            var marker_863411f9a0ed43b8ad72618625e56c00 = L.marker(
+                [45.3988095, -75.7367493],
                 {}
-            ).addTo(map_9755371c296d42a1919b59fcde915fbd);
+            ).addTo(map_a3498b587ad04aa5903535b3ebeaac7c);
         
     
-            var icon_aaa3f8daa69f48eb880a782b9115fd22 = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            var icon_90d2f32f22104f2199f5471bd97fa06b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
             );
-            marker_4ac98c92f1b143f7a37b38f5429111d0.setIcon(icon_aaa3f8daa69f48eb880a782b9115fd22);
+            marker_863411f9a0ed43b8ad72618625e56c00.setIcon(icon_90d2f32f22104f2199f5471bd97fa06b);
         
     
-        var popup_d7bc4c5517074f3686248b3f2d64f5cb = L.popup({"maxWidth": "100%"});
+        var popup_3338b5b754ae40fe99b14f1dc45ac65e = L.popup({"maxWidth": "100%"});
 
         
-            var html_0d1e775e574948bd938905d6eda9eed6 = $(`<div id="html_0d1e775e574948bd938905d6eda9eed6" style="width: 100.0%; height: 100.0%;">The PATH - Maple Leaf Square</div>`)[0];
-            popup_d7bc4c5517074f3686248b3f2d64f5cb.setContent(html_0d1e775e574948bd938905d6eda9eed6);
+            var html_a5a1c72baa8848288ee4cac9135a0231 = $(`<div id="html_a5a1c72baa8848288ee4cac9135a0231" style="width: 100.0%; height: 100.0%;">1325 Wellington Street W</div>`)[0];
+            popup_3338b5b754ae40fe99b14f1dc45ac65e.setContent(html_a5a1c72baa8848288ee4cac9135a0231);
         
 
-        marker_4ac98c92f1b143f7a37b38f5429111d0.bindPopup(popup_d7bc4c5517074f3686248b3f2d64f5cb)
+        marker_863411f9a0ed43b8ad72618625e56c00.bindPopup(popup_3338b5b754ae40fe99b14f1dc45ac65e)
         ;
 
         
     
     
-            marker_4ac98c92f1b143f7a37b38f5429111d0.bindTooltip(
+            marker_863411f9a0ed43b8ad72618625e56c00.bindTooltip(
                 `<div>
                      Click for more info
                  </div>`,

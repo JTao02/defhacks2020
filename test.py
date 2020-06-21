@@ -13,11 +13,10 @@ ENDPOINT = 'https://api.yelp.com/v3/businesses/search'
 HEADERS = {'Authorization': 'bearer %s' % API_KEY}
 
 # define the parameters
-PARAMETERS = {'term': 'Starbucks',
-              'limit': 50,
+PARAMETERS = {'limit': 50,
               'offset': 50,
               'radius': 40000,
-              'location': 'Toronto'}
+              'location': 'Ottawa'}
 
 # FULL LIST
 '''
@@ -51,12 +50,28 @@ tooltip = 'Click for more info'
 latitude_list = get_latitude_list(business_data)
 longitude_list = get_longitude_list(business_data)
 address_list = get_addresses(business_data)
+alias_list = get_aliases(business_data)
+unique_alias_list = get_unique_aliases(business_data)
+
+vegan_places=["vegan"]
+coffee_places=["coffee","breakfast_brunch"]
+
+folium.Marker([start_latitude, start_longitude],
+                tooltip="You are here",
+                icon=folium.Icon(color='red', icon='leaf')).add_to(m)
+
 
 for i, e in enumerate(latitude_list):
+    if alias_list[i] in vegan_places:
+        color = "green"
+    elif alias_list[i] in coffee_places:
+        color = "black"
+    else:
+        color = "blue"
     folium.Marker([latitude_list[i],longitude_list[i]],
                 popup=address_list[i],
                 tooltip=tooltip,
-                icon=folium.Icon(color='green', icon='leaf')).add_to(m)
+                icon=folium.Icon(color=color, icon='leaf')).add_to(m)
 
 # generate map
 m.save('map.html')

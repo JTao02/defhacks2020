@@ -39,5 +39,8 @@ response = requests.get(url = ENDPOINT, params = PARAMETERS, headers = HEADERS)
 
 business_data = response.json()
 
-print(get_location(business_data))
+data = assign_business_coordinates(business_data)
 
+for k,v in data.items():
+    print(k,v)
+    print()

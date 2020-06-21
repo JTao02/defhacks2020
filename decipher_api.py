@@ -12,6 +12,14 @@ def unpack_api(business_data):
         print("Coordinates " + str(biz['coordinates']))
         print("Location " + str(biz['location']))
         print("\n\n")
+
+# key = business name, value = coordinates
+def assign_business_coordinates(business_data):
+    results = {}
+    for biz in business_data['businesses']:
+        results[biz['name']] = biz['coordinates']
+    return results
+
     
 def get_names(business_data):
     results=[]

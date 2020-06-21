@@ -2,11 +2,12 @@ import requests
 import json
 from functions import get_file_contents
 from database_funcs import *
+from Location import get_lat_long
 
 class Data:
     #Dictionary mapping location to current lines
     BUSINESS_ID = 'c6QaDLAu9T3ge_DZ7w4Sig'
-    API_KEY = get_file_contents('api_key.txt')
+    API_KEY = get_file_contents('yelp_api_key.txt')
 
     #Constructor method
     def __init__(self):
@@ -20,7 +21,9 @@ class Data:
     @staticmethod
     #Setting method for lines
     def setLines(address, queue, eta):
-        entry = {address : [queue, eta]}
+        entry = {"address" : address,
+                 address : [queue, eta]
+                }      
         updateDatabase(entry)
 
     @staticmethod
@@ -33,15 +36,15 @@ class Data:
         ENDPOINT = 'https://api.yelp.com/v3/businesses/search'
         HEADERS = {'Authorization': 'bearer %s' % Data.API_KEY}
         if location == None:
-            latitude = None
-            longitude = None
+            latitude, longitude = get_lat_long()
+            #print(latitude, longitude)
             PARAMETERS = {'term': keywords,
               'limit': 20,
               'radius': radius,
               'latitude': latitude,
               'longitude': longitude}
         else:
-            PARAMETERS = {'term':'grocery',
+            PARAMETERS = {'term': keywords,
                 'limit': 20,
                 'radius': radius,
                 'location': location}
@@ -53,4 +56,3 @@ class Data:
         #for biz in business_data['businesses']:
         #    print(biz['name'])
 
-    

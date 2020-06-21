@@ -15,5 +15,6 @@ class Users:
         Data.setLines(address, queue, eta)
 
 person = Users("Jason")
-person.report_line('2010 Milvia Street', 5, 10)
+person.report_line('1234 Sesame St', 12345, 1234123410)
+print(Data.getLines('1234 Sesame St'))
 print("Hello World")

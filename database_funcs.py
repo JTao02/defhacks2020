@@ -17,19 +17,18 @@ def updateDatabase(query:dict):
     address = query["address"]
     queue = query[address][0]
     ETA = query[address][1]
+    stats = [queue, ETA]
 
     lookUp = client["Data"]["API"]
-    a = lookUp.find_one(query)
+    a = lookUp.find_one({"address": address})
     if not a:
         entry = {
             "address": address,
-            address  : [queue, ETA]
+            address  : stats
         }
         collection.insert_one(entry)
     else:
-        collection.update_one({
-            {"address", query[address]},
-            { 
-                set: {address: [query[address][0], query[address][1]]}
-            }
-        })
+        collection.update_one(
+            {"address": address},
+            { '$set': {address: stats}, }
+        )

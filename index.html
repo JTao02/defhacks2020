@@ -12,26 +12,43 @@
         </div>
         <div id="filter-container">
             <h3 class="sub-header">Filters</h3>
-            <form action="test.php" method="POST" enctype="multipart/form-data">
+            <form action="test.php" method="post">
                 <div class="wrap" id="keyword-wrap">
                     <label class="prompt" id="search-prompt">Search:</label>
-                    <input type="text" class="inside" id="search-input">
+                    <input type="text" class="inside" id="search-input" name="search">
                 </div>
 
                 <div class="wrap" id="radius-wrap">
                     <label class="prompt">Radius:<span class="inside"id="radius-input"></span></label>
-                    <input type="range" min="1000" max="40000" value="10000" step="1000" class="slider" id="myRange">
+                    <input type="range" min="1000" max="40000" value="10000" step="1000" class="slider" id="myRange" name="radius">
                 </div>
 
                 <div class="wrap" id="location-wrap">
                     <label class="prompt">Location:<span class="inside"id="demo"></span></label>
-                    <input type="text" class="inside" id="location-input">
+                    <input type="text" class="inside" id="location-input" name="location">
                 </div>
-                <input type="submit" value="Confirm" class="inside">
+                <input type="submit" value="Confirm" class="inside" id="submit-button">
             </form>
         </div>
         <div id="display-container">
-            <h3 class="sub-header">Search Results</h3>
+            <h3 class="sub-header">Add Lines</h3>
+            <form action="test.php" method="post">
+                <div class="wrap" id="keyword-wrap">
+                    <label class="prompt" id="search-prompt">Address:</label>
+                    <input type="text" class="inside" id="address-input" name="search">
+                </div>
+
+                <div class="wrap" id="radius-wrap">
+                    <label class="prompt" id="search-prompt">Number of People:</label>
+                    <input type="text" class="inside" id="people-input" name="search">
+                </div>
+
+                <div class="wrap" id="location-wrap">
+                    <label class="prompt">Estimated Wait Time:<span class="inside"id="demo"></span></label>
+                    <input type="text" class="inside" id="wait-input" name="location">
+                </div>
+                <input type="submit" value="Add Line" class="inside" id="submit-button">
+            </form>
         </div>
         <iframe src="./map.html"></iframe>
         <script src="functions.js"></script>

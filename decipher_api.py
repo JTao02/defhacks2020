@@ -1,4 +1,3 @@
-
 # print out info in better way
 def unpack_api(business_data):
 
@@ -20,7 +19,7 @@ def assign_business_coordinates(business_data):
         results[biz['name']] = biz['coordinates']
     return results
 
-    
+
 def get_names(business_data):
     results=[]
     for biz in business_data['businesses']:
@@ -84,13 +83,23 @@ def get_longitude_list(business_data):
         results.append(current['longitude'])
     return results
 
+def get_region_latitude(business_data):
+    return business_data['region']['center']['latitude']
 
+def get_region_longitude(business_data):
+    return business_data['region']['center']['longitude']
 
+def get_aliases(business_data):
+    result=[]
+    for biz in business_data['businesses']:
+         current = biz['categories'] #current is list of one dict
+         result.append(current[0]['alias'])
+    return result
 
-
-
-
-
-
-    
-
+def get_unique_aliases(business_data):
+    result=[]
+    for biz in business_data['businesses']:
+        current = biz['categories'] #current is list of one dict
+        if current not in result:
+            result.append(current[0]['alias'])
+    return result

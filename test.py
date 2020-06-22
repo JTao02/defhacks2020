@@ -8,14 +8,14 @@ from decipher_api import *
 # define a business ID
 business_id = 'zZ-ytyY5R_KGk1tJCE2f2g'
 
-API_KEY = get_file_contents('apikey')
+API_KEY = get_file_contents('yelp_api_key.txt')
 ENDPOINT = 'https://api.yelp.com/v3/businesses/search'
 HEADERS = {'Authorization': 'bearer %s' % API_KEY}
 
 # define the parameters
 PARAMETERS = {'limit': 50,
               'offset': 50,
-              'radius': 40000,
+              'radius': 22000,
               'location': 'Ottawa'}
 
 # FULL LIST
@@ -59,6 +59,15 @@ coffee_places=["coffee","breakfast_brunch"]
 folium.Marker([start_latitude, start_longitude],
                 tooltip="You are here",
                 icon=folium.Icon(color='red', icon='info-sign')).add_to(m)
+
+folium.Circle(
+    location=[start_latitude, start_longitude],
+    radius=11000,
+    popup="Radius of 11000m",
+    color='#428bca',
+    fill=True,
+    fill_color='#428bca'
+).add_to(m)
 
 
 for i, e in enumerate(latitude_list):

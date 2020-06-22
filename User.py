@@ -14,7 +14,20 @@ class Users:
     def report_line(self, address, queue, eta):
         Data.setLines(address, queue, eta)
 
+
+
+
 person = Users("Jason")
-person.report_line('1234 Sesame St', 12345, 1234123410)
 print(Data.getLines('1234 Sesame St'))
-print("Hello World")
+
+
+person.report_line('1885 Univeristy Ave', 10, 30)
+
+person.report_line('1234 Sesame St', 5, 15)
+print(Data.getLines('1234 Sesame St'))
+
+print(person.filter("Coffee"))
+
+for biz in person.filter("Coffee")['businesses']:
+    print(biz['name'])
+
